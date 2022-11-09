@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+        #cartdiv1{
+             display :flex ;
+             height:40px;
+             border:1px solid red
+        }
+        #cartdiv1>div{
+            margin-left: 20px;
+            padding:10px;
+        }
+        #cartdiv2{
+            background-color:#f2f2f2 ;
+            height: 700px;
+            display:flex;
+            padding:28px
+        }
+        #cartdiv2>div{
+            border:1px solid red;
+            width:43%;
+            border-radius: 20px;
+            margin-left: 5%;
+            
+        }
+        #bonusoffer{
+            background-color: #f5f5f5;
+            
+        }
+        #bo1{
+            display: flex;
+            justify-content: space-between;
+            padding-left:40px;
+            padding-right: 40px;
+            padding-top: 20px;
+        }
+        #bonusoffer>div{
+            height:50%;
+            border:1px solid green;      
+        }
+        #botop>div:nth-child(2){
+        height: 70%;
+        border:1px solid blue;
+        }
+        #bo2>div{
+            height:40%;
+            border:grey;
+            border-bottom-style: dotted;
+        }
+        #bo2_1{
+            padding:10px;
+            display:flex;
+
+        }
+        #bo2_1>button{
+        margin-left: 90px;
+        background-color: black;
+        color:white;
+        font-size: 20px;
+        width: 170px;
+        border-radius: 14px;
+        height: 40px;
+        margin-top: 27px;
+        }
+        #bobottom{
+            background-color: white;
+        }
+    </style>
+   
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="cartdiv1">
+        <div style="color:grey">Home</div>
+       <span style="margin-top:7px;color:grey" class="material-symbols-outlined"> last_page</span>      
+        <div style="margin-left:0px;font-weight: bold ;">Cart</div>
+    </div>
+
+    <div id="cartdiv2">
+        <div id="bonusoffer">
+            <div id="botop">
+                <div id="bo1">
+                    <h2 style="font-weight: 900;font: roboto;">BONUS OFFERS</h2>
+                    <span style="color:grey;margin-top: 20px;" class="material-symbols-outlined">
+                        expand_less
+                        </span>
+                </div>
+                <div id="bo2">
+                    <div id="bo2_1">
+                        <img style="height:80px;margin-left:20px;margin-top: 10px;" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-mini-lipstick-12-baby-houseman-28220228632659_584be809-56c3-4baf-b90b-8db9e95b2afe.jpg?v=1659698252" alt="">
+                        <div style=display:block;margin-left:20px;>
+                            <h3>Matte As Hell Crayon Mini Lipstick - 12 Baby Houseman</h3>
+                            <h3>Rs:199</h3>
+                        </div>
+                        <button>ADD TO CART</button>
+                    </div>
+                    <div>
+                        <div id="bo2_1">
+                            <img style="height:80px;margin-left:20px;margin-top: 8px;" src="https://cdn.shopify.com/s/files/1/0906/2558/products/SMNLL-Mini---Shade-02.jpg?v=1656000101" alt="">
+                            <div style=display:block;margin-left:20px;>
+                                <h3> Smudge Me Not Liquid Mini Lipstick - 02 Brink of Pink (Plum Rose) <br>RS:249</h3>
+                            </div>
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <p style="color:#fb76b8;text-align: end;margin-right: 20px;">+View More</p>
+                </div>
+               
+            </div>
+            <div id="bobottom">
+                <div><h2 >CART SUMMARY</h2></div>
+                <div id="cartproduct"></div>
+            </div>
+            
+        </div>
+        <div id="applyc">
+              
+        </div>
+    </div>
+</body>
+</html>
+<script src="cartpage.js"></script>
