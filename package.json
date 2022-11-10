@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/akhtarfaizan20/hard-hole-4225#readme",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "json-server": "^0.17.1"
   }
 }

@@ -1,0 +1,151 @@
+#footer{
+    
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: -70px;
+    color: #fff;
+    padding-bottom: 50px;
+    /* border: 1px solid red; */
+}
+
+.footerlogo{
+    
+    /* position: relative; */
+    overflow-x: hidden;
+    width: 15%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+
+.footerlogo img{
+    border: 15px solid black;
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#brand{
+    padding-top:3%;
+    text-align: center;
+
+}
+#socialmedia{
+    width: 20%;
+    border: 0px solid red;
+    margin: auto;
+    display: flex;
+    
+}
+#socialmedia i{
+    border: 0px solid green;
+   margin-left: 15px;
+   color: gray;
+}
+#socialmedia i:hover{
+    color: #fff;
+}
+.line{
+    width: 90%;
+    margin: auto;
+}
+
+#footertabs{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 70px;
+    font-size: 18px;
+}
+
+#footertabs a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    opacity: 0.9;
+    
+}
+#footertabs a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+#footinfo{
+    width: 90%;
+    margin: auto;
+}
+#infocard{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* padding: 20px; */
+    font: 500;
+    font-size: 18px;
+    
+}
+
+#infocard>div{
+    /* border: 1px solid red; */
+    height: 150px;
+    list-style: none;
+}
+#infocard p,a{
+    color: gray;
+    font-weight: 500;
+}
+#infocard a{
+    text-decoration: none;
+
+}
+
+#infocard a:hover{
+    border-bottom: 2px solid gray;
+    
+}
+
+#infocard #white:hover{
+    color:  #fff;
+}
+
+#infocard :nth-child(1) :nth-child(3){
+    font-size: 14px;
+}
+
+#app{
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 100;
+}
+#app div{
+    line-height: 0%;
+}
+
+#app div p{
+    font-size: 14px; 
+    color: gray;
+    
+}
+#appimg img{
+   cursor: pointer;
+    width: 150px;
+    height: 40px;
+
+}
+#tag{
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}

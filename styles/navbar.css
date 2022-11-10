@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+}
+
+body ::selection {
+    color: #fff;
+    background: rgb(252, 39, 121)
+}
+
+input {
+    caret-color: #fc2779
+}
+
+#navbar {
+
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+    z-index: 9;
+}
+
+.logopic {
+    width: 60px;
+    border-radius: 50%;
+    /* margin-left: 20px; */
+}
+
+#uppernav {
+    height: 55%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#downnav {
+    height: 45%;
+    border: 1px solid rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20);
+    margin-top: 0px;
+
+}
+
+#sbox {
+    border: 1px solid #fff;
+    display: block;
+    border-radius: 8px;
+    /* background-color: #fff; */
+}
+
+
+.search {
+    width: 500px;
+    height: 41px;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 8px 0px 0px 8px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.sbtn {
+    height: 45px;
+    width: 120px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: -2px;
+    border: 0px solid red;
+    background-color: #fff;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+#login {
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+#login div {
+    margin-left: 10px;
+}
+
+#icons {
+    color: #fff;
+    cursor: pointer;
+}
+
+#icons i {
+    margin-left: 15px;
+}
+
+#tabs {
+
+    list-style: none;
+    display: flex;
+
+}
+
+#tabs a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    opacity: 0.9;
+}
