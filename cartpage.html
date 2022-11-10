@@ -10,7 +10,7 @@
         #cartdiv1{
              display :flex ;
              height:40px;
-             border:1px solid red
+             border:px solid red
         }
         #cartdiv1>div{
             margin-left: 20px;
@@ -20,14 +20,14 @@
             background-color:#f2f2f2 ;
             height: 700px;
             display:flex;
-            padding:28px
+            padding:24px
         }
         #cartdiv2>div{
-            border:1px solid red;
+            border:px solid red;
             width:43%;
             border-radius: 20px;
             margin-left: 5%;
-            
+            padding:24px
         }
         #bonusoffer{
             background-color: #f5f5f5;
@@ -42,11 +42,11 @@
         }
         #bonusoffer>div{
             height:50%;
-            border:1px solid green;      
+            border:px solid green;      
         }
         #botop>div:nth-child(2){
         height: 70%;
-        border:1px solid blue;
+        border:px solid blue;
         }
         #bo2>div{
             height:40%;
@@ -71,6 +71,50 @@
         #bobottom{
             background-color: white;
         }
+        #applyc{
+            background-color: white;
+            padding: 20px;
+        }
+        #applyc_1{
+            border: 1px solid grey;
+            border-radius: 15px;
+        }
+        #applyc_11{
+            /* border: 1px solid grey; */
+            height:100px;
+            padding:30px;
+            border-bottom-style: dotted;
+            padding-bottom: 0px;
+            border-color: #d9d9d9;
+            
+        }
+       #applybtn{
+        padding:20px;
+        background-color:#d9d9d9 ;
+        font-weight: bold;
+        color:darkgrey;border:none;border-radius: 10px;
+        width:170px;
+        font-size: 20px;
+       }
+       #giftcode{
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+       transition: 0.5s;
+        outline: none;
+       }
+       #applyc_12{
+        display: flex;
+        justify-content:space-between;
+        padding: 10px;
+       }
+       #applyc_111>div{
+        display:flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        color:grey
+       }
     </style>
    
 </head>
@@ -102,11 +146,11 @@
                     </div>
                     <div>
                         <div id="bo2_1">
-                            <img style="height:80px;margin-left:20px;margin-top: 8px;" src="https://cdn.shopify.com/s/files/1/0906/2558/products/SMNLL-Mini---Shade-02.jpg?v=1656000101" alt="">
+                            <img style="height:70px;margin-left:20px;margin-top: 8px;" src="https://cdn.shopify.com/s/files/1/0906/2558/products/SMNLL-Mini---Shade-02.jpg?v=1656000101" alt="">
                             <div style=display:block;margin-left:20px;>
                                 <h3> Smudge Me Not Liquid Mini Lipstick - 02 Brink of Pink (Plum Rose) <br>RS:249</h3>
                             </div>
-                            <button>ADD TO CART</button>
+                            <button style="width:200px">ADD TO CART</button>
                         </div>
                     </div>
                     <p style="color:#fb76b8;text-align: end;margin-right: 20px;">+View More</p>
@@ -119,8 +163,48 @@
             </div>
             
         </div>
-        <div id="applyc">
+          <div id="applyc"> 
+             <h2>APPLY COUPON</h2>
+              <div id="applyc_1">
               
+                 <div id="applyc_11">
+                    <input id="giftcode" oninput="giftcode()" style="padding:20px;border-radius: 10px;font-size: 18px;width:500px;border:1px solid  grey;margin-right: 20px;" type="text" placeholder="Enter Gift Code">
+                    <button id="applybtn">APPLY</button>
+                 </div>
+                 <div  id="applyc_12">
+                     <p style="color:#fb76b8">View all offers/ Promos for you!</p>
+                     <span style="color:grey;margin-top: 12px;" class="material-symbols-outlined">
+                        expand_more
+                        </span>
+                </div>
+              </div>
+              <div>
+                 <h2>PRICE DETAIL</h2>
+              <div id="applyc_1">
+              
+                 <div id="applyc_11">
+                    <div id="applyc_111"> 
+                      <div>
+                        <p>Total Price</p>
+                        <p>Rs:</p>
+                       </div>
+                       <div>
+                        <p>Tax</p>
+                        <p>Rs:</p>
+                       </div>
+                       <div>
+                        <p>Shipping</p>
+                        <p style="color:green">Free</p>
+                       </div></div>
+                   
+                 </div>
+                 <div style="padding:20px" id="applyc_12">
+                     <h2 style="margin-top:40px">Total:</h2>
+                     
+                     <h2  style="margin-top:40px">Rs:Total value Price</h2>
+                </div>
+              </div>
+              </div>
         </div>
     </div>
 </body>
