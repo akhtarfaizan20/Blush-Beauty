@@ -1,13 +1,13 @@
+let data;
 window.onload = () => {
   getData();
 };
 const getData = async () => {
   let response = await fetch(`http://localhost:3000/orders`);
 
-  let data = await response.json();
+  data = await response.json();
   displayData(data);
 };
-
 let displayData = (data) => {
   let tbody = document.querySelector("#tbody");
   tbody.innerHTML = "";
