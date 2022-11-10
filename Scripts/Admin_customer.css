@@ -18,6 +18,7 @@ body{
     align-items: center;
     padding: 50px;
     grid-template-columns: 1fr;
+    background-color: #f9fafb;
 }
 
 #customer{
