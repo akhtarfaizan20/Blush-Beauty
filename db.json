@@ -5,5 +5,22 @@
       "title": "json-server",
       "author": "typicode"
     }
+  ],
+  "customers": [
+    {
+      "id": "akhtarfaizan20@gmail.com",
+      "phone": "9718245953",
+      "name": "Faizan Akhtar",
+      "password": "12345678",
+      "dateAdded": "05-05-2001"
+    }
+  ],
+  "products": [
+    {
+      "id": 123456789,
+      "name": "Ace Of Face Foundation Stick - 7 gms",
+      "poster": "https://cdn.shopify.com/s/files/1/0906/2558/products/17-Raf-Mini-1_722c9db9-41f9-4a9f-8084-f121e232d86f.jpg?v=1658851265",
+      "price": 799
+    }
   ]
 }
