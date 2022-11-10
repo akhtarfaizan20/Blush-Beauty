@@ -1,3 +1,7 @@
+#first>div:nth-child(2)
+{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 .logo>div
 {
   margin-left: 25px;
