@@ -41,7 +41,7 @@ function append(data){
   image.style="height:50px;width:50px;margin-right:40px"
   image.src=el.image_url;
   let h4=document.createElement('h4');
-  h4.innerText=el.price
+  h4.innerText="Rs:"+el.price
   let name =document.createElement("p");
   name.innerText=el.name;
   name.style="margin-left:40px"
