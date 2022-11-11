@@ -1,0 +1,160 @@
+#footer{
+    
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: -50px;
+    color: #fff;
+    padding-bottom: 30px;
+    /* border: 1px solid red; */
+}
+
+.footerlogo{
+    
+    /* position: relative; */
+    overflow-x: hidden;
+    width: 15%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+
+.footerlogo img{
+    border: 15px solid black;
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#brand{
+    padding-top:3%;
+    text-align: center;
+    font-size: 18px;
+    
+}
+#socialmedia{
+    width: 300px;
+    border: 0px solid red;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+}
+
+#socialmedia i:hover{
+    color: #fff;
+}
+.line{
+    width: 90%;
+    margin: auto;
+}
+
+#footertabs{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 70px;
+    font-size: 18px;
+}
+
+#footertabs a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    opacity: 0.9;
+    
+}
+#footertabs a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+#footinfoo{
+    width: 90%;
+    margin: auto;
+    font-size: 24px;
+}
+#infocard{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* padding: 20px; */
+    font: 500;
+    font-size: 18px;
+    
+}
+
+#infocard>div{
+    /* border: 1px solid red; */
+    height: 150px;
+    list-style: none;
+    
+}
+#infocard p{
+    color: gray;
+    font-weight: 500;
+    
+}
+#infocard a{
+    text-decoration: none;
+    color: gray;
+}
+
+#infocard a:hover{
+    border-bottom: 2px solid gray;
+    
+}
+
+#infocard #white:hover{
+    color:  #fff;
+}
+
+#infocard :nth-child(1) :nth-child(3){
+    font-size: 14px;
+    margin-top: -15px;
+
+}
+
+#app{
+    width: 750px;
+    /* max-width: fit-content; */
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 100;
+    border: 0px solid red;
+    
+}
+#app div{
+    
+    line-height: 10px;
+}
+
+#app div p{
+    font-size: 14px; 
+    color: gray;
+    font-weight: 400;
+    
+}
+#appimg img{
+   cursor: pointer;
+    width: 150px;
+    height: 55px;
+
+}
+#tag{
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    margin-top: 20px;
+}
