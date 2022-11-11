@@ -2,109 +2,26 @@
 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.logo>div
-{
-  margin-left: 25px;
-}
-.logo>div+p{
-  font-weight: normal;
-}
-.logo>p{
-  margin-left: 15px;
-  font-weight: bold;
-  font-family: sans-serif;
-  color: rgb(145, 139, 139);
-}
-.logo>p+div{
-  height: 25px;
-  width: 50px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
-.logo>div:nth-child(1){
-  padding: 5px;
-  border-radius: 50%;
-  background-color: rgb(186, 22, 236);
-}
-.logo>div:nth-child(1)>span{
-  font-weight: bold;
-  font-family: sans-serif;
-  color: white;
-}
-.logo>p+div>img{
-  width: 50%;
-  cursor: pointer;
-}
-.logo>p+div>img+img{
-  margin-left: 10px;
-}
+body{
+  display: grid;
+  grid-template-columns: 1fr 4fr ;
+  padding: 0;
+  margin: 0;
+  background-color: #f9fafb;
 
-#sidebar>div:nth-child(12)
-{
-   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  margin-left: 12px;
 }
-#sidebar>div:nth-child(12)>span
+#container
 {
-   width: 80%;
-   color: rgb(124,89,238);
+  border-radius: 5px;
+  width: 90%;
+  height: 550px;
+  margin: auto;
+  /* margin-top: -650px; */
+  /* margin-right: 50px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  background-color: white;
 }
-    #sidebar{
-        width: 15%;
-        height : 650px;
-       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-       margin-top: 100px;
-       margin-left: -5px;
-    }
-
-    #sidebar>hr{
-      margin: 40px 0px 30px 0px;
-      color: grey;
-    }
-    #sidebar>div{
-        width: 90%;
-        height: 30px;
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-        margin-top: 15px;
-        margin-left: -10px;
-        align-items: center;
-        cursor: pointer;
-        /* border: 2px solid green; */
-    }
-    #sidebar>div:nth-child(1){
-      /* padding: 5px; */
-      margin-top: 10px;
-      align-items: center;
-    }
-    #sidebar>div>span{
-        width: 40%;
-     font-size: 17px;
-     margin-right: 20px;
-     font-family: sans-serif;
-      cursor: pointer;
-    }
-    #sidebar>div>img{
-      width: 15%;
-      border-radius: 50%;
-      margin: auto;
-    }
-    #container
-    {
-      border-radius: 5px;
-      width: 75%;
-      height: 550px;
-      margin: auto;
-      margin-top: -650px;
-      margin-right: 50px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      padding: 10px;
-    }
     #first{
       width: 95%;
       height: 40px;
@@ -223,5 +140,72 @@
       font-family: sans-serif;
       font-weight: bold;
       color: rgb(117, 122, 115);
+      cursor: pointer;
+    }
+
+    #customerTable{
+      margin: 50px;
+    
+    }
+    #customer{
+    
+      border-collapse: collapse;
+      text-align: left;
+      width: 100%;
+      margin: auto;
+    }
+    tr{
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+    }
+    td,th{
+        padding: 10px;
+        color: #6b7280;
+    }
+    
+    
+    #customers_div{
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 50px;
+    }
+    
+    .productimage{
+      width: 40px;
+    }
+    tr>td:last-child{
+      cursor: pointer;
+      color: white;
+      background-color: red;
+    }
+    tr>td:last-child:hover{
+      cursor: pointer;
+      color: red;
+      background-color: white;
+    }
+    
+    
+    #pagination_button{
+      width: fit-content;
+      margin: 30px auto;
+      display: flex;
+      gap: 5px;
+    }
+    #pagination_button>div{
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      cursor: pointer;
+    }
+    #page{
+      display: flex;
+      gap: 5px;
+    }
+    #page>button{
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: white;
       cursor: pointer;
     }

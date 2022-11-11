@@ -5,35 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Orders.css">
+    <link rel="stylesheet" href="/Orders/sidebar.css">
 </head>
 <body>
-    <div id="sidebar"></div>
-    
+    <div id="left">
+        
+</div>
 <div id="container">
    <div id="first">
     <div>
-        <span>Orders</span>
-        <span>Drafts</span>
+        <span>Orders Drafts</span>
+        
     </div>
     <div>
         <img src="https://cdn0.iconfinder.com/data/icons/interface-outline-2/512/upload1-512.png" alt="Error">
         <p>Exports Orders</p>
     </div>
    </div>
-   <div id="second">
-    <div>
-        <button>Filters <span>0</span></button>
-        <button>+</button>
-        <button>Complete</button>
-        <button>Incomplete</button>
-    </div>
-    <div>
-        <img src="data:image/jpeg;base64,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" alt="Error">
-        <input type="text" placeholder="Search" id="search">
-    </div>
-   </div>
-   <!-- <hr> -->
+   
    <div id="ordertable">
     <table id="order">
         <thead>
@@ -52,11 +43,15 @@
            
         </tbody>
     </table>
+    <div id="pagination_button">
+            
+        <span id="page">
+
+        </span>
+     </div>
 </div>
 </div>
 </body>
 </html>
 
-
-<script src="/Orders/orders.js"></script>
-
+<script type="module" src="/Orders/orders.js"></script>

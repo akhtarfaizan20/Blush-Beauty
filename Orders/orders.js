@@ -1,16 +1,53 @@
+import { sidebar } from "./component/sidebar.js";
+
+let side_div = document.getElementById("left");
+side_div.innerHTML = sidebar();
+
+// const option1 = document.getElementById("orders");
+// option1.addEventListener("click", () => {
+//   window.location.href = "Orders.html";
+// });
+
+// const option2 = document.getElementById("product");
+// option2.addEventListener("click", () => {
+//   window.location.href = "Products.html";
+// });
+// const option3 = document.getElementById("customer");
+// option3.addEventListener("click", () => {
+//   window.location.href = "customer.html";
+// });
+// const option4 = document.getElementById("discount");
+// option4.addEventListener("click", () => {
+//   window.location.href = "Discount.html";
+// });
+// const option5 = document.getElementById("price");
+// option5.addEventListener("click", () => {
+//   window.location.href = "Price.html";
+// });
+// const option6 = document.getElementById("setting");
+// option6.addEventListener("click", () => {
+//   window.location.href = "Setting.html";
+// });
+// const option7 = document.getElementById("orders");
+// option7.addEventListener("click", () => {
+//   window.location.href = "Orders.html";
+// });
+
 window.onload = () => {
   getData();
+  createButton();
 };
-const getData = async () => {
-  let response = await fetch(`http://localhost:3000/orders`);
-
+let getData = async () => {
+  let response = await fetch(
+    `http://localhost:3000/orders?_page=${page}&_limit=6`
+  );
   let data = await response.json();
+
   displayData(data);
 };
-
-let displayData = (data) => {
-  let tbody = document.querySelector("#tbody");
-  tbody.innerHTML = "";
+const displayData = (data) => {
+  let tbody = document.getElementById("tbody");
+  tbody.innerText = "";
   data.forEach((el) => {
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
@@ -29,4 +66,27 @@ let displayData = (data) => {
     tr.append(td1, td2, td3, td4, td5, td6);
     tbody.append(tr);
   });
+};
+
+let button = document.getElementById("page");
+let page = 1;
+const createButton = async () => {
+  let response = await fetch(`http://localhost:3000/customers`);
+
+  let data = await response.json();
+  let totalButtons = Math.ceil(data.length / 6);
+  //   but.innerHTML = "";
+  button.innerHTML = "";
+
+  for (let i = 1; i <= totalButtons; i++) {
+    let but = document.createElement("button");
+    but.innerText = i;
+    but.id = i;
+    but.onclick = () => {
+      page = i;
+      getData();
+      createButton();
+    };
+    button.append(but);
+  }
 };
