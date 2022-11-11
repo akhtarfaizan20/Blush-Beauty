@@ -225,3 +225,90 @@
       color: rgb(117, 122, 115);
       cursor: pointer;
     }
+
+    #setting_container
+    {
+      width: 70%;
+      height: 600px;
+      margin: auto;
+      margin-top: -600px;
+      margin-right: 100px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+    }
+    #setting_container>.option
+    {
+      /* margin: auto; */
+      margin-top: 5px;
+      align-items: center;
+     border-radius: 5px;
+     display: flex;
+     justify-content: space-around;
+     font-family: sans-serif;
+     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    #setting_container>.option>div:nth-child(1)
+    {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgb(221,214,254);
+      align-items: center;
+      text-align: center;
+    }
+    #setting_container>.option>div>img
+    {
+      width: 60%;
+      margin-top: 8px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    
+    #setting_container>.option>div:nth-child(2)
+    {
+      width: 70%;
+      height: 50px;
+      /* border: 2px solid green; */
+    }
+    #setting_container>.option>div:nth-child(2)>p
+    {
+      color: grey;
+      margin: auto;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #setting_container>.option>div:nth-child(2)>span
+    {
+      font-weight: bold;
+      font-size: 18px;
+      margin: auto;
+      cursor: pointer;
+      /* border: 2px solid green; */
+    }
+    
+    #setting_container>.option>div:nth-child(2)>span:hover
+    {
+       color: rgba(44, 42, 42, 0.842);
+    }
+    .option>div+span
+    {
+      font-weight: bold;
+      color: grey;
+      font-size: 20px;
+      cursor:pointer;
+      /* border: 2px solid green; */
+    }
+    
+    .option>div+span:hover
+    {
+      color: rgb(212, 208, 208);
+    }
+    #setting_container>.option>div:nth-child(2)>p:hover
+    {
+      color: rgb(169, 177, 168);
+    }
