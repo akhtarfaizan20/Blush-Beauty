@@ -5,8 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profilepage</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+    <style>
+        #profilediv1{
+             display :flex ;
+             height:40px;
+             border:px solid red
+        }
+        #profilediv1>div{
+            margin-left: 20px;
+            padding:10px;
+        }
+        #profilemid{
+            display:flex;
+            border:1px solid red;
+            height:600px;
+            background-color:#f2f2f2;
+            padding:20px
+        }
+        #profilemid>div:nth-child(1){
+            width:25%;
+            border:1px solid green;
+            border-radius: 15px;
+        }
+        #profilebottom{
+            background-color:#edf0ef;
+            border:px solid green;
+            height:260px;
+            text-align: center;
+        }
+        #subscribebtn{
+            margin-left: 5px;
+        background-color: black;
+        color:white;
+        font-size: 16px;
+        width: 180px;
+        border-radius: 14px;
+        height: 45px;
+        margin-top: 20px;
+        }
+        #pb1{
+            display:flex;
+            margin-left: 33%;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="navbar"></div>
+    <div id="profilediv1">
+        <div style="color:grey">Home</div>
+       <span style="margin-top:7px;color:grey" class="material-symbols-outlined"> last_page</span>      
+        <div style="margin-left:0px;font-weight: bold ;color:grey">Account</div>
+        <span style="margin-top:7px;color:grey" class="material-symbols-outlined"> last_page</span>     
+        <div style="margin-left:0px;font-weight: bold ;">Order</div>
+    </div>
+    <!-- mid section  -->
+    <div id="profilemid">
+        <div></div>
+        <div></div>
+    </div>
+    <!--Let stay in touch part whole div -->
+    <div id="profilebottom">
+        <div id="pb1">
+            <div style="border:1px solid red;width:70px;height:1px;background-color: #fc2779;margin-top: 40px;margin-right: 20px;"></div>
+            <h1>Let's stay in Touch</h1>
+            <div style="border:1px solid red;width:70px;height:1px;background-color: #fc2779;margin-top: 40px;margin-left: 20px;"></div>
+        </div>
+        
+        <h4 style="color:#5f5e5e">Get the latest beauty tips straight to your inbox. Can’t wait to connect!</h4>
+        <input style="padding: 10px;outline:none;width:500px;border-radius: 10px;border-color: #f2f2f2;font-size: 18px;" type="email" placeholder="Enter Email">
+        <button id="subscribebtn">SUBSCRIBE</button>
+    </div>
+    <div id="footer"></div>
 </body>
 </html>
