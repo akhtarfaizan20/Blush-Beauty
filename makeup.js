@@ -1,19 +1,6 @@
 var makeupData = [
   {
     image_url:
-      "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
-    name: "Contour De Force Mini Blush",
-    price: 349,
-    rating: 4.9,
-    star_url: "https://i.ibb.co/4d3n7ZC/star.png",
-    reviews: "(40)",
-    product: "blush",
-    shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-    shade_no: 5,
-    count: 1,
-  },
-  {
-    image_url:
       "https://i.ibb.co/MGbG5pt/1-51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg",
     name: "Contour De Force Face Palette",
     price: 799,
@@ -580,6 +567,21 @@ var makeupData = [
   },
 ];
 
+function post() {
+  makeupData.forEach(async (el) => {
+    // console.log(el);
+    let response = await fetch(`http://localhost:3000/products`, {
+      method: "POST",
+      body: JSON.stringify(el),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    let data = await response.json();
+  });
+}
+// post();
+
 localStorage.setItem("makeupData", JSON.stringify(makeupData));
 
 var makeupData = JSON.parse(localStorage.getItem("makeupData"));
@@ -587,6 +589,18 @@ var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
 var wishlistArr = JSON.parse(localStorage.getItem("listItems")) || [];
 
 displayData(makeupData);
+
+window.onload = () => {
+  getData();
+};
+
+let getData = async () => {
+  let response = await fetch(`http://localhost:3000/products/-Phpju2`);
+
+  let data = await response.json();
+
+  console.log(data);
+};
 
 function filter() {
   var selected = document.querySelector("#filter").value;

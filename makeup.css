@@ -38,23 +38,23 @@ p {
   margin-top: 0px;
 }
 #btn {
-  background-color: pink;
+  background-color: black;
   color: white;
   border: none;
   padding: 0px 30px;
 }
 #btn:hover {
-  background-color: black;
+  background-color: pink;
   cursor: pointer;
   color: white;
 }
 #btn1 {
   border: none;
-  background-color: pink;
+  background-color: black;
   color: white;
 }
 #btn1:hover {
-  background-color: black;
+  background-color: pink;
   cursor: pointer;
   color: white;
 }
