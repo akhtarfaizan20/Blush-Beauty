@@ -13,6 +13,20 @@
       "name": "Faizan Akhtar",
       "password": "12345678",
       "dateAdded": "05-05-2001"
+    },
+    {
+      "id": "heroft7024@gmail.com",
+      "name": "Sachin Shekhar ",
+      "password": "sachinshekhar",
+      "phone": "8383838383",
+      "date": "11-11-2022"
+    },
+    {
+      "id": "skuahsdkb@gmail.com",
+      "name": "uday",
+      "password": "jkbakcbak",
+      "phone": "6213821",
+      "date": "11-11-2022"
     }
   ],
   "orders": [
