@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <style>
+        #top{
+            border:1px solid black;
+            height:40px;
+            background-color: black;
+            color:white;
+            padding-left: 33%;
+            padding-bottom: 13px;
+        }
+        #middle{
+            display:flex;
+            margin-bottom: 0px;
+        }
+        #middle>div:nth-child(1){
+          border:px solid red;
+          width:40%;
+          height:600px
+        }
+        #bottom{
+            border:1px solid black;
+            height:40px;
+            background-color: black;
+            color:white;
+            padding-left: 33%;
+            padding-bottom: 13px;
+        }
+        input{
+            width:300px;
+            margin-bottom: 20px;padding:10px;
+            font-size: 18px;
+            outline:none;
+
+        }
+        #middle>div:nth-child(2){
+         padding-left:130px;
+         padding-top: 80px;
+
+        }
+        button{
+            width:200px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h4>Get a FREE festive box worth Rs.880 on a spend of Rs.999.</h4>
+    </div>
+    <div id="middle">
+        <div>
+            <img style="width:100%;height:100%" src="https://media.sugarcosmetics.com/upload/authSIe2.jpg" alt="">
+        </div>
+        <div>
+            
+            <input type="text" id="id" placeholder="Email"><br>
+       
+            <input type="text" id="password" placeholder="Password"><br>
+            
+            <button id="submituserdata" onclick="gotoregister()">REGISTER</button><br>
+
+            <button id="loginpage">LOGIN</button>
+        </div>
+    </div>
+    <div id="bottom">
+        <h5>Copyright © 2022 BLUSH BEAUTY Cosmetics. All rights reserved.</h5>
+    </div>
+</body>
+</html>
+<script src="loginpage.js"></script>
