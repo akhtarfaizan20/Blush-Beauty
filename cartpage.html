@@ -73,6 +73,7 @@
             background-color: white;
             height: auto;
             padding: 2px 10px;
+            margin-top: 20px;
         }
         #applyc{
             background-color: white;
@@ -175,7 +176,7 @@
               <div id="applyc_1">
               
                  <div id="applyc_11">
-                    <input id="giftcode" oninput="giftcode()" style="padding:18px;border-radius: 10px;font-size: 18px;width:250px;border:1px solid  grey;margin-right: 20px;" type="text" placeholder="Enter Gift Code">
+                    <input id="giftcode" oninput="giftcode()" style="padding:18px;border-radius: 10px;font-size: 18px;width:300px;border:1px solid  grey;margin-right: 10px;" type="text" placeholder="Enter Gift Code">
                     <button id="applybtn">APPLY</button>
                  </div>
                  <div  id="applyc_12">
@@ -193,11 +194,11 @@
                     <div id="applyc_111"> 
                       <div>
                         <p>Total Price</p>
-                        <p>Rs:</p>
+                        <p id="totalprice1">Rs:</p>
                        </div>
                        <div>
                         <p>Tax</p>
-                        <p>Rs:</p>
+                        <p style="color:green">Free</p>
                        </div>
                        <div>
                         <p>Shipping</p>
@@ -206,10 +207,14 @@
                    
                  </div>
                  <div style="padding:20px" id="applyc_12">
-                     <h2 style="margin-top:40px">Total:</h2>
+                     <h2 style="margin-top:40px;margin-left: 15px;">Total:</h2>
                      
-                     <h2  style="margin-top:40px">Rs:Total value Price</h2>
+                     <h2  id="tptopay" style="margin-top:40px;margin-right: 18px;"></h2>
+
+                  
                 </div>
+                <button id="placeorderbtn" onclick="placeorder()" style="color:white;width:250px;background-color:black;font-size:18px;height:30px;margin-left: 330px;border-radius: 10px;margin-bottom: 20px;"></button>
+
               </div>
               </div>
         </div>
