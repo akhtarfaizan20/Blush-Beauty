@@ -15,17 +15,10 @@
       "dateAdded": "05-05-2001"
     },
     {
-      "id": "heroft7024@gmail.com",
-      "name": "Sachin Shekhar ",
-      "password": "sachinshekhar",
-      "phone": "8383838383",
-      "date": "11-11-2022"
-    },
-    {
-      "id": "skuahsdkb@gmail.com",
-      "name": "uday",
-      "password": "jkbakcbak",
-      "phone": "6213821",
+      "id": "faizan.akhtar@gmail.com",
+      "name": "Faizan Akhtar",
+      "password": "Abc@12345",
+      "phone": "123456789",
       "date": "11-11-2022"
     }
   ],
@@ -263,5 +256,43 @@
       "product": "",
       "id": 123456807
     }
+  ],
+  "cart":[
+    {
+      "id":125689,
+      "product":{
+        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
+        "name": "Contour De Force Mini Blush",
+        "price": 349,
+        "rating": 4.9,
+        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+        "reviews": "(40)",
+        "product": "blush",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 5,
+        "count": 1,
+        "id": 123456791
+      },
+      "user_id":"akhtarfaizan20@gmail.com"
+    },
+    {
+      "id":125688,
+      "product":{
+        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
+        "name": "Contour De Force Mini Blush",
+        "price": 349,
+        "rating": 4.9,
+        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+        "reviews": "(40)",
+        "product": "blush",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 5,
+        "count": 1,
+        "id": 123456791
+      },
+      "user_id":"faizan.akhtar@gmail.com"
+    }
   ]
+
+
 }
