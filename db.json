@@ -257,27 +257,10 @@
       "id": 123456807
     }
   ],
-  "cart":[
+  "cart": [
     {
-      "id":125689,
-      "product":{
-        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
-        "name": "Contour De Force Mini Blush",
-        "price": 349,
-        "rating": 4.9,
-        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
-        "reviews": "(40)",
-        "product": "blush",
-        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-        "shade_no": 5,
-        "count": 1,
-        "id": 123456791
-      },
-      "user_id":"akhtarfaizan20@gmail.com"
-    },
-    {
-      "id":125688,
-      "product":{
+      "id": 125688,
+      "product": {
         "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
         "name": "Contour De Force Mini Blush",
         "price": 999,
@@ -290,11 +273,11 @@
         "count": 1,
         "id": 123456791
       },
-      "user_id":"akhtarfaizan20@gmail.com"
+      "user_id": "akhtarfaizan20@gmail.com"
     },
     {
-      "id":125688,
-      "product":{
+      "id": 125688,
+      "product": {
         "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
         "name": "Contour De Force Mini Blush",
         "price": 449,
@@ -307,9 +290,23 @@
         "count": 1,
         "id": 123456791
       },
-      "user_id":"akhtarfaizan20@gmail.com"
+      "user_id": "akhtarfaizan20@gmail.com"
+    },{
+      "id": 125688,
+      "product": {
+        "image_url": "https://i.ibb.co/0m1KdhG/sugar-cosmetics-magic-wand-waterproof-concealer-07-vanilla-latte-fair-golden-undertone-1327839861153.jpg",
+      "name": "Magic Wand Waterproof Concealer",
+      "price": 799,
+      "rating": 4.8,
+      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "reviews": "(59)",
+      "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      "shade_no": 6,
+      "count": 1,
+      "product": "",
+      "id": 123456807
+      },
+      "user_id": "faizan.akhtar@gmail.com"
     }
   ]
-
-
 }
