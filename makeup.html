@@ -21,63 +21,53 @@
     <!-- Navbar -->
 
     <nav id="navbar">
+
       <!-- first navbar -->
 
       <div id="uppernav">
-        <!-- logo -->
-        <div id="brandlogo">
-          <img class="logopic" src="./image/BLUSH.png" alt="" />
-          <div>
-            Blush<span
-              ><img
-                id="queen"
-                src="https://cdn-icons-png.flaticon.com/128/7894/7894561.png"
-                alt="" /></span
-            >Beauty
+          <!-- logo -->
+          <a href="index.html">
+              <div id="brandlogo">
+                  <img class="logopic" src="./image/BLUSH.png" alt="">
+                  <div>Blush<span><img id="queen" src="https://cdn-icons-png.flaticon.com/128/7894/7894561.png"
+                              alt=""></span>Beauty</div>
+              </div>
+          </a>
+
+          <!-- Search box -->
+          <div id="sbox">
+              <input class="search" type="text" placeholder=' Try "Liquid Lipstick"' name="search">
+              <button class="sbtn" type="submit"><i class="fa fa-search"></i>Search</button>
           </div>
-        </div>
 
-        <!-- Search box -->
-        <div id="sbox">
-          <input
-            class="search"
-            type="text"
-            placeholder=' Try "Liquid Lipstick"'
-            name="search"
-          />
-          <button class="sbtn" type="submit">
-            <i class="fa fa-search"></i>Search
-          </button>
-        </div>
+          <!-- login -->
+          <div id="login">
+              <div><i class="fa-solid fa-user"></i></div>
+              <div id="logpage">Login/Register</div>
+          </div>
 
-        <!-- login -->
-        <div id="login">
-          <div><i class="fa-solid fa-user"></i></div>
-          <div id="logpage">Login/Register</div>
-        </div>
-
-        <!-- Right Icons -->
-        <div id="icons">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-bag-shopping"></i>
-          <i class="fa-solid fa-tag"></i>
-        </div>
+          <!-- Right Icons -->
+          <div id="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-bag-shopping"></i>
+              <i class="fa-solid fa-tag"></i>
+          </div>
       </div>
 
       <!-- second navbar -->
 
       <div id="downnav">
-        <ul id="tabs">
-          <li><a href="#">Makeup</a></li>
-          <li><a href="#">Brushes</a></li>
-          <li><a href="#">Skincare</a></li>
-          <li><a href="#">Gifting</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Offers</a></li>
-          <li><a href="#">Stores</a></li>
-        </ul>
+          <ul id="tabs">
+              <li><a href="makeup.html">Makeup</a></li>
+              <li><a href="#">Brushes</a></li>
+              <li><a href="#">Skincare</a></li>
+              <li><a href="#">Gifting</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Stores</a></li>
+          </ul>
       </div>
-    </nav>
+  </nav>
     <!-- top -->
     <div id="top">
       <img
@@ -107,7 +97,7 @@
       </div>
     </div>
     <div id="divsidebyside">
-      <div class="sort">
+      <div id="sort">
         <select id="priceSort" onchange="handlerPriceSort()">
           <option src="" value="">Sorting</option>
 
@@ -155,9 +145,9 @@
         </select>
       </div>
 
-      <div id="displayitem"></div>
+      <!-- <div id="displayitem"></div> -->
       <div id="container-prod"></div>
-      <div id="ft_container"></div>
+      <!-- <div id="ft_container"></div> -->
     </div>
 
     <!--footer!-->

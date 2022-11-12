@@ -604,14 +604,12 @@ let getData = async () => {
 
 window.onload = () => {
   getData();
+  showName();
 };
 
-localStorage.setItem("makeupData", JSON.stringify(makeupData));
-
-// var makeupData = JSON.parse(localStorage.getItem("makeupData"));
-var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
-var wishlistArr = JSON.parse(localStorage.getItem("listItems")) || [];
-git;
+// // var makeupData = JSON.parse(localStorage.getItem("makeupData"));
+// var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+// var wishlistArr = JSON.parse(localStorage.getItem("listItems")) || [];
 function filter() {
   var selected = document.querySelector("#filter").value;
   var filterList = makeupData.filter(function (elem) {
@@ -642,19 +640,16 @@ function handlerPriceSort() {
   }
   displayData(makeupData);
 }
-document.querySelector(
-  "#displayitem"
-).textContent = `Makeup - ${makeupData.length} items`;
 
 function displayData(makeupData) {
   document.querySelector("#container-prod").innerHTML = "";
   makeupData.map(function (elem) {
     var div = document.createElement("div");
-    div.setAttribute("id", "main");
+    div.setAttribute("class", "main");
 
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
-    img.setAttribute("id", "image");
+    img.setAttribute("class", "image");
 
     var head = document.createElement("p");
     head.textContent = elem.name;
@@ -709,44 +704,60 @@ function displayData(makeupData) {
   });
 }
 
-function addToCart(elem, index) {
-  // console.log(elem["product_id"])
-  // console.log(cartArr.length)
-  if (cartArr.length == 0) {
-    cartArr.push(elem);
+async function addToCart(elem, index) {
+  console.log(elem);
+  if (loginneduser) {
+    let obj = {
+      user_id: loginneduser.id,
+      product: elem,
+    };
+    try {
+      let response = await fetch(`http://localhost:3000/cart`, {
+        method: "POST",
+        body: JSON.stringify(obj),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      let data = await response.json();
+    } catch (error) {}
   } else {
-    for (var i = 0; i < cartArr.length; i++) {
-      if (elem["product_id"] == cartArr[i].product_id) {
-        console.log(
-          "elem prod id: ",
-          elem["product_id"],
-          "Cart product id: ",
-          cartArr[i].product_id
-        );
-        cartArr[i].count += 1;
-        // break;
-      } else {
-        // cartArr[i].count=0;
-        cartArr.push(elem);
-      }
-    }
+    alert("Please Login to add product in your cart");
+    window.location.href = "/loginpage.html";
   }
-  // cartArr.push(elem);
-  localStorage.setItem("cartItems", JSON.stringify(cartArr));
-  alert("Item added to cart");
 }
 
 function wishList(elem) {
-  wishlistArr.push(elem);
-  localStorage.setItem("listItems", JSON.stringify(wishlistArr));
   alert("Item added to wish list");
 }
 
-var counter = 1;
-for (var i = 0; i < makeupData.length; i++) {
-  makeupData[i]["product_id"] = counter;
+let loginneduser = JSON.parse(localStorage.getItem("loginneduser"));
+// console.log(loginneduser);
 
-  // console.log(makeupData[i]["product_id"]);
-  counter++;
-}
-localStorage.setItem("makeupData", JSON.stringify(makeupData));
+let logpage = document.getElementById("logpage");
+
+let showName = () => {
+  if (loginneduser) {
+    logpage.innerText = "Hi, " + loginneduser.name;
+    logpage.onclick = () => {
+      window.location.href = "/profilepage.html";
+    };
+  } else {
+    logpage.innerText = "Login/Register";
+    logpage.onclick = () => {
+      window.location.href = "/loginpage.html";
+    };
+  }
+};
+
+let cart = document.querySelector("#icons>i:nth-child(2)");
+
+cart.onclick = () => {
+  if (loginneduser) {
+    console.log(loginneduser);
+    window.location.href = "/cartpage.html";
+  } else {
+    alert("Login before checking into cart!");
+    window.location.href = "/loginpage.html";
+  }
+};
