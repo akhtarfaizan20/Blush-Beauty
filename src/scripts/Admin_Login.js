@@ -14,6 +14,6 @@ let validateAdmin = () => {
     alert("Enter the correct password");
   } else {
     alert("Login successfull");
-    window.location.href = "Admin_Dashboard.html";
+    window.location.href = "/Orders/Orders.html";
   }
 };

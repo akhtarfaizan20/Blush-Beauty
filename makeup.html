@@ -7,12 +7,80 @@
     <title>
       Makeup: Buy Makeup products Online at Best Price | SUGAR Cosmetics
     </title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="makeup.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
     <!--------------Header--------------->
+    <!-- Navbar -->
 
+    <nav id="navbar">
+
+      <!-- first navbar -->
+
+      <div id="uppernav">
+          <!-- logo -->
+          <a href="index.html">
+              <div id="brandlogo">
+                  <img class="logopic" src="./image/BLUSH.png" alt="">
+                  <div>Blush<span><img id="queen" src="https://cdn-icons-png.flaticon.com/128/7894/7894561.png"
+                              alt=""></span>Beauty</div>
+              </div>
+          </a>
+
+          <!-- Search box -->
+          <div id="sbox">
+              <input class="search" type="text" placeholder=' Try "Liquid Lipstick"' name="search">
+              <button class="sbtn" type="submit"><i class="fa fa-search"></i>Search</button>
+          </div>
+
+          <!-- login -->
+          <div id="login">
+              <div><i class="fa-solid fa-user"></i></div>
+              <div id="logpage">Login/Register</div>
+          </div>
+
+          <!-- Right Icons -->
+          <div id="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-bag-shopping"></i>
+              <i class="fa-solid fa-tag"></i>
+          </div>
+      </div>
+
+      <!-- second navbar -->
+
+      <div id="downnav">
+          <ul id="tabs">
+              <li><a href="makeup.html">Makeup</a></li>
+              <li><a href="#">Brushes</a></li>
+              <li><a href="#">Skincare</a></li>
+              <li><a href="#">Gifting</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Stores</a></li>
+          </ul>
+      </div>
+  </nav>
+    <!-- top -->
+    <div id="top">
+      <img
+        id="top1image"
+        src="	https://d32baadbbpueqt.cloudfront.net/Collection/6a68d77f-80b5-4860-9a4d-6005844c937d.jpg"
+      />
+      <img
+        id="top2image"
+        src="	https://d32baadbbpueqt.cloudfront.net/Collection/6a68d77f-80b5-4860-9a4d-6005844c937d.jpg"
+      />
+    </div>
+
+    <!-- top end -->
     <!--------------Header-end--------------->
     <div id="displayBar">
       <div class="homeIcon">
@@ -20,34 +88,141 @@
           <img class="home-img" src="https://i.ibb.co/9cxQD2K/home.png" />
         </a>
 
-        <a class="home-img1" href="makeup.html">/ Makeup</a>
+        <a
+          class="home-img1"
+          href="makeup.html"
+          style="font-size: 16px; color: black; font-weight: 700"
+          >/ Makeup</a
+        >
       </div>
-      <div class="sort">
+    </div>
+    <div id="divsidebyside">
+      <div id="sort">
         <select id="priceSort" onchange="handlerPriceSort()">
           <option src="" value="">Sorting</option>
-          <option value="high">Price - High to Low</option>
-          <option value="low">Price - Low to High</option>
-          <option value="rel">Relevance</option>
+
+          <option value="high" style="font-size: 16px; font-weight: 200">
+            <span><i class="fa-solid fa-caret-down"></i></span>
+            Price: High To Low
+          </option>
+          <option value="low" style="font-size: 16px; font-weight: 200">
+            Price:Low To High
+          </option>
+          <option value="rating" style="font-size: 16px; font-weight: 200">
+            Rating
+          </option>
         </select>
+
         <select name="" id="filter" onchange="filter()">
           <option value="">Select Product</option>
-          <option value="kajal">Kajal</option>
-          <option value="mascara">Mascara</option>
-          <option value="eye">Eyeliner</option>
-          <option value="crayon">Crayon Lipstick</option>
-          <option value="vivid">Vivid Lipstick</option>
-          <option value="matte">Matte Lipstick</option>
-          <option value="blush">Blush</option>
-          <option value="primer">Primer</option>
-          <option value="found">Foundation & Powder</option>
+          <option value="kajal" style="font-size: 16px; font-weight: 200">
+            Kajal
+          </option>
+          <option value="mascara" style="font-size: 16px; font-weight: 200">
+            Mascara
+          </option>
+          <option value="eye" style="font-size: 16px; font-weight: 200">
+            Eyeliner
+          </option>
+          <option value="crayon" style="font-size: 16px; font-weight: 200">
+            Crayon Lipstick
+          </option>
+          <option value="vivid" style="font-size: 16px; font-weight: 200">
+            Vivid Lipstick
+          </option>
+          <option value="matte" style="font-size: 16px; font-weight: 200">
+            Matte Lipstick
+          </option>
+          <option value="blush" style="font-size: 16px; font-weight: 200">
+            Blush
+          </option>
+          <option value="primer" style="font-size: 16px; font-weight: 200">
+            Primer
+          </option>
+          <option value="found" style="font-size: 16px; font-weight: 200">
+            Foundation & Powder
+          </option>
         </select>
       </div>
+
+      <!-- <div id="displayitem"></div> -->
+      <div id="container-prod"></div>
+      <!-- <div id="ft_container"></div> -->
     </div>
-    <div id="displayitem"></div>
-    <div id="container-prod"></div>
-    <div id="ft_container">
-      <!--footer!-->
+
+    <!--footer!-->
+    <div class="footerlogo">
+      <img src="./image/BLUSH.png" alt="#" />
     </div>
+    <footer id="footer">
+      <div id="brand">
+        <p>BLUSH BEAUTY</p>
+      </div>
+      <div id="socialmedia">
+        <h3><i class="fa-brands fa-facebook"></i></h3>
+        <h3><i class="fa-brands fa-twitter"></i></h3>
+        <h3><i class="fa-brands fa-youtube"></i></h3>
+        <h3><i class="fa-brands fa-instagram"></i></h3>
+        <h3><i class="fa-solid fa-envelope"></i></h3>
+        <h3><i class="fa-brands fa-pinterest"></i></h3>
+      </div>
+
+      <hr class="line" />
+
+      <div id="footmenu">
+        <ul id="footertabs">
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Admin Login</a></li>
+        </ul>
+      </div>
+
+      <hr class="line" />
+
+      <div id="footinfoo">
+        <p>GET IN TOUCH</p>
+        <div id="infocard">
+          <div>
+            <l>Call us at</l>
+            <p><a href="#">1800-209-9933</a></p>
+            <p>Monday to Friday : 9 AM to 7 PM</p>
+          </div>
+          <div>
+            <l>Support</l>
+            <p><a href="#">hello@sugarcosmetics.com</a></p>
+          </div>
+          <div>
+            <l>Careers</l>
+            <p id="white">We're hiring!</p>
+          </div>
+          <div>
+            <l>Press & Media</l>
+            <p><a href="#">pr@sugarcosmetics.com</a></p>
+          </div>
+          <div>
+            <l>Influencer Collab</l>
+            <p><a href="#">Join Us</a></p>
+          </div>
+        </div>
+      </div>
+      <hr class="line" />
+      <div id="app">
+        <div>
+          <h4>GET THE NEW SUGAR APP TODAY!</h4>
+          <p>Tap into a better shopping experience.</p>
+        </div>
+        <div id="appimg">
+          <img src="https://in.sugarcosmetics.com/playstore.png" alt="" />
+          <img src="https://in.sugarcosmetics.com/apple-store.png" alt="" />
+        </div>
+      </div>
+      <hr class="line" />
+
+      <p id="tag">Copyright © 2022 SUGAR Cosmetics. All rights reserved.</p>
+    </footer>
   </body>
 </html>
 <script type="text/javascript" src="makeup.js"></script>
