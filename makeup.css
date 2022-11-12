@@ -1,10 +1,23 @@
+* {
+  /* --default-linear-gradient: linear-gradient(271.29deg,hsla(0,0%,100%,0) 14.61%, */
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+body {
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0 0 150px black;
+}
 #container-prod {
-  width: 85%;
+  width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 20px;
+  margin-top: 15px;
   gap: 50px;
+  margin-right: 50px;
 }
 #main {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -24,37 +37,45 @@ p {
 #star {
   width: 20px;
   height: 20px;
+  margin-bottom: 12px;
 }
 #flex {
-  width: 30%;
+  width: 15%;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   margin: auto;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 #flex:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
 }
 #flex > p {
   margin-top: 0px;
+  color: grey;
 }
 #btn {
-  background-color: pink;
+  background-color: black;
   color: white;
   border: none;
-  padding: 0px 30px;
+  padding: 10px 9px;
 }
 #btn:hover {
-  background-color: black;
+  background-color: rgb(185, 30, 30);
   cursor: pointer;
   color: white;
 }
 #btn1 {
   border: none;
-  background-color: pink;
+  background-color: black;
   color: white;
+  padding: 9px 50px;
 }
 #btn1:hover {
-  background-color: black;
+  background-color: rgb(185, 30, 30);
+
   cursor: pointer;
   color: white;
 }
@@ -63,53 +84,115 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
+
 #displayBar {
-  display: flex;
-  width: 95%;
+  width: 100%;
   margin: auto;
-  margin-top: 180px;
+  margin-top: 15px;
+}
+#divsidebyside {
+  display: flex;
+  width: 100%;
+  margin: auto;
 }
 #displayitem {
-  margin: 5px 0px 0px 38px;
+  margin: 5px 5px 5px 30px;
 }
 .home-img {
-  width: 3%;
+  width: 1%;
+  margin: auto;
   text-decoration: none;
 }
 .sort {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-right: 75px;
+  flex-direction: column;
+
+  width: 12%;
+  margin-top: 10px;
+  margin-left: 10px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
 }
 #priceSort {
-  min-width: 50px;
-  max-width: 150px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  border-radius: 2px;
+  border-color: aliceblue;
+  border-width: 0.5px;
+  margin-bottom: 50px;
+  padding: 5px;
+  font-size: medium;
 }
 #filter {
-  min-width: 50px;
-  max-width: 150px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  border-radius: 2px;
+  border-color: aliceblue;
+  border-width: 0.5px;
+  margin-top: 50px;
+  padding: 5px;
+  margin-bottom: 50px;
+  font-size: medium;
 }
 .home-img1 {
-  margin: 0px 10px;
+  margin: 0px 40px;
   text-decoration: none;
-  color: rgb(117, 131, 159);
 }
 .home-img1:hover {
   color: rgb(5, 88, 255);
 }
 #shade {
-  width: 5%;
-  height: 3%;
-  margin-left: 5px;
+  width: 50%;
+  height: 10%;
 }
 #shadeNo {
-  margin-top: -2px;
+  margin-top: -1px;
+  margin-right: 5px;
+  height: 3%;
+  color: grey;
 }
 #shadeFlex {
+  width: 10%;
   display: flex;
-  margin-top: 5px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin: auto;
+}
+#top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 0.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#top1image {
+  height: 220px;
+  width: 100%;
+  filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  vertical-align: middle;
+}
+#top2image {
+  height: 220px;
+
+  position: absolute;
+  /* background-position-x: 50%;
+  background-position-y: 50%; */
+
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1.75rem;
+  padding-top: 1.75rem;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+
+  vertical-align: middle;
 }
 @media only screen and (min-width: 401px) and (max-width: 850px) {
   #container-prod {
