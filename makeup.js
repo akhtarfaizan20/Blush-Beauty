@@ -611,7 +611,7 @@ localStorage.setItem("makeupData", JSON.stringify(makeupData));
 // var makeupData = JSON.parse(localStorage.getItem("makeupData"));
 var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
 var wishlistArr = JSON.parse(localStorage.getItem("listItems")) || [];
-
+git;
 function filter() {
   var selected = document.querySelector("#filter").value;
   var filterList = makeupData.filter(function (elem) {
@@ -635,7 +635,7 @@ function handlerPriceSort() {
       return a.price - b.price;
     });
   }
-  if (selected == "rel") {
+  if (selected == "rating") {
     makeupData.sort(function (a, b) {
       return b.rating - a.rating;
     });
@@ -652,17 +652,6 @@ function displayData(makeupData) {
     var div = document.createElement("div");
     div.setAttribute("id", "main");
 
-    var div3 = document.createElement("div");
-    div3.setAttribute("id", "shadeFlex");
-
-    var shadeNo = document.createElement("p");
-    shadeNo.textContent = elem.shade_no;
-    shadeNo.setAttribute("id", "shadeNo");
-
-    var shadeImg = document.createElement("img");
-    shadeImg.setAttribute("src", elem.shade_url);
-    shadeImg.setAttribute("id", "shade");
-
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     img.setAttribute("id", "image");
@@ -672,6 +661,16 @@ function displayData(makeupData) {
 
     var p = document.createElement("p");
     p.textContent = `Rs. ${elem.price} `;
+    var div3 = document.createElement("div");
+    div3.setAttribute("id", "shadeFlex");
+
+    var shadeNo = document.createElement("p");
+    shadeNo.textContent = elem.shade_no;
+    shadeNo.setAttribute("id", "shadeNo--");
+
+    var shadeImg = document.createElement("img");
+    shadeImg.setAttribute("src", elem.shade_url);
+    shadeImg.setAttribute("id", "shade");
 
     var div1 = document.createElement("div");
     div1.setAttribute("id", "flex");
@@ -697,7 +696,7 @@ function displayData(makeupData) {
     });
 
     var btn1 = document.createElement("button");
-    btn1.textContent = "Add to cart";
+    btn1.textContent = "ADD TO CART";
     btn1.addEventListener("click", function () {
       addToCart(elem);
     });
@@ -705,7 +704,7 @@ function displayData(makeupData) {
     div3.append(shadeNo, shadeImg);
     div2.append(btn, btn1);
     div1.append(img1, p1, p2);
-    div.append(div3, img, head, p, div1, div2);
+    div.append(img, head, p, div3, div1, div2);
     document.querySelector("#container-prod").append(div);
   });
 }
@@ -737,21 +736,11 @@ function addToCart(elem, index) {
   alert("Item added to cart");
 }
 
-// function addToCart(elem){
-//     console.log(elem)
-//     cartArr.push(elem)
-//     localStorage.setItem("cartItems", JSON.stringify(cartArr));
-//     alert("Item added to cart")
-
-// }
-
 function wishList(elem) {
   wishlistArr.push(elem);
   localStorage.setItem("listItems", JSON.stringify(wishlistArr));
   alert("Item added to wish list");
 }
-
-//data--------------------------------------------------------
 
 var counter = 1;
 for (var i = 0; i < makeupData.length; i++) {
