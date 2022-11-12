@@ -20,14 +20,14 @@
         }
         #profilemid{
             display:flex;
-            border:1px solid red;
+            border:px solid red;
             height:600px;
             background-color:#f2f2f2;
             padding:20px
         }
         #profilemid>div:nth-child(1){
             width:25%;
-            border:1px solid green;
+            border:px solid green;
             border-radius: 15px;
         }
         #profilebottom{
@@ -50,6 +50,46 @@
             display:flex;
             margin-left: 33%;
         }
+        #profilemid>div:nth-child(1){
+            border:px solid red ;
+            width:30%;
+            padding:5px;
+        }
+        #profilemid>div:nth-child(2){
+            border:px solid green;
+            width:60%;
+            margin-left:80px;
+            border-radius: 20px;
+        }
+        #profilemid2{
+          padding:100px;
+          text-align: center;
+          background-color: white;
+         }
+         #profilemid1>div:nth-child(1){
+            width: 100%;
+            height:38%;
+           
+            border-radius:9px;
+            background-color: #282828;
+         }
+         #profilemid1_2>div{
+           height:70px;
+           border-bottom: 1px solid #5f5e5e;
+           cursor: pointer;
+           display: flex;
+           justify-content: space-between;
+           padding: 15px 10px 0px 15px;
+           color:#282828
+         }
+         #profilemid1_2{
+            background-color: white;
+         }
+        
+         #profilemid1_2>div:hover{
+            color:#fc2779
+         }
+        
     </style>
 </head>
 <body>
@@ -63,8 +103,59 @@
     </div>
     <!-- mid section  -->
     <div id="profilemid">
-        <div></div>
-        <div></div>
+        <div id="profilemid1">
+            <!-- Name and detail of the user -->
+          <div id="profiledetail">
+            <img style="border-radius:40px;width:100px" src="https://media.sugarcosmetics.com/upload/accountMask.png" alt="">
+          </div>
+            <!-- Below order address and other section -->
+          <div id="profilemid1_2">
+            <div style=" color:#fc2779">
+                <span style="margin-top:19px" class="material-symbols-outlined">
+                    dvr
+                    </span>
+                <h3>Order</h3> 
+                  <span  style="margin-top:18px" class="material-symbols-outlined">
+                  chevron_right
+                 </span>
+            </div>
+            <div>
+                <span style="margin-top:19px" class="material-symbols-outlined">
+                    share_location
+                    </span>
+                <h3>Addresses</h3> 
+                 <span  style="margin-top:18px" class="material-symbols-outlined">
+                 chevron_right
+                </span>
+            </div>
+            <div>
+                <span style="margin-top:19px" class="material-symbols-outlined">
+                    favorite
+                    </span>
+                <h3>Wishlist</h3> 
+                  <span  style="margin-top:18px" class="material-symbols-outlined">
+                chevron_right
+                </span>
+            </div>
+            <div>
+                <span style="margin-top:19px" class="material-symbols-outlined">
+                    redeem
+                    </span>
+                <h3>Refer & Earn</h3> 
+                  <span style="margin-top:18px;" class="material-symbols-outlined">
+                  chevron_right
+                </span>
+            </div>
+          
+          </div>
+
+        </div>
+        <div id="profilemid2">
+            <img style="width:250px" src="https://media.sugarcosmetics.com/upload/ic_empty_order%201.png" alt="">
+            <p style="font-size:18px;font-weight: bold;">Order is empty</p>
+            <h4 style="color:grey">What! No order yet? Get going already!</h4>
+            <button style="width:130px;background-color:black;color:white;border-radius:5px;height:40px">SHOP NOW</button>
+        </div>
     </div>
     <!--Let stay in touch part whole div -->
     <div id="profilebottom">
@@ -81,3 +172,4 @@
     <div id="footer"></div>
 </body>
 </html>
+<script src="profilepage.js"></script>
