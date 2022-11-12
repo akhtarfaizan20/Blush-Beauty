@@ -13,6 +13,7 @@ let logginedUser = JSON.parse(localStorage.getItem("loginneduser"));
 // console.log(logginedUser);
 window.onload = () => {
   getData();
+  showName();
 };
 let getData = async () => {
   let response = await fetch(`http://localhost:3000/cart`);
@@ -68,7 +69,7 @@ function append(data) {
 
 let removeFromCart = async (i) => {
   let id = actualdata[i].id;
-  alert(id);
+  alert("Item Removed");
 
   let response = await fetch(`http://localhost:3000/cart/${id}`, {
     method: "DELETE",
@@ -121,3 +122,34 @@ async function placeorder() {
 
   window.location.href = "/profilepage.html";
 }
+
+let loginneduser = JSON.parse(localStorage.getItem("loginneduser"));
+// console.log(loginneduser);
+
+let logpage = document.getElementById("logpage");
+
+let showName = () => {
+  if (loginneduser) {
+    logpage.innerText = "Hi, " + loginneduser.name;
+    logpage.onclick = () => {
+      window.location.href = "/profilepage.html";
+    };
+  } else {
+    logpage.innerText = "Login/Register";
+    logpage.onclick = () => {
+      window.location.href = "/loginpage.html";
+    };
+  }
+};
+
+let cart = document.querySelector("#icons>i:nth-child(2)");
+
+cart.onclick = () => {
+  if (loginneduser) {
+    console.log(loginneduser);
+    window.location.href = "/cartpage.html";
+  } else {
+    alert("Login before checking into cart!");
+    window.location.href = "/loginpage.html";
+  }
+};
