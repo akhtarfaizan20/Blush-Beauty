@@ -12,7 +12,7 @@
       "phone": "9718245953",
       "name": "Faizan Akhtar",
       "password": "12345678",
-      "dateAdded": "05-05-2001"
+      "date": "05-05-2001"
     },
     {
       "id": "faizan.akhtar@gmail.com",
@@ -20,6 +20,13 @@
       "password": "Abc@12345",
       "phone": "123456789",
       "date": "11-11-2022"
+    },
+    {
+      "id": "tanujmaurya40@gmail.com",
+      "name": "Tanuj Kumar",
+      "password": "123456",
+      "phone": "8851357334",
+      "date": "12-11-2022"
     }
   ],
   "orders": [
@@ -30,6 +37,38 @@
       "phone": "9718245953",
       "totalproducts": 5,
       "status": "Order Confirmed"
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "faizan.akhtar@gmail.com",
+      "phone": "123456789",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100001
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "faizan.akhtar@gmail.com",
+      "phone": "123456789",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100002
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "faizan.akhtar@gmail.com",
+      "phone": "123456789",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100003
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "faizan.akhtar@gmail.com",
+      "phone": "123456789",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100004
     }
   ],
   "products": [
@@ -259,7 +298,7 @@
   ],
   "cart": [
     {
-      "id": 125688,
+      "id": 125686,
       "product": {
         "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
         "name": "Contour De Force Mini Blush",
@@ -276,7 +315,7 @@
       "user_id": "akhtarfaizan20@gmail.com"
     },
     {
-      "id": 125688,
+      "id": 125687,
       "product": {
         "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
         "name": "Contour De Force Mini Blush",
@@ -291,20 +330,21 @@
         "id": 123456791
       },
       "user_id": "akhtarfaizan20@gmail.com"
-    },{
+    },
+    {
       "id": 125688,
       "product": {
         "image_url": "https://i.ibb.co/0m1KdhG/sugar-cosmetics-magic-wand-waterproof-concealer-07-vanilla-latte-fair-golden-undertone-1327839861153.jpg",
-      "name": "Magic Wand Waterproof Concealer",
-      "price": 799,
-      "rating": 4.8,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
-      "reviews": "(59)",
-      "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-      "shade_no": 6,
-      "count": 1,
-      "product": "",
-      "id": 123456807
+        "name": "Magic Wand Waterproof Concealer",
+        "price": 799,
+        "rating": 4.8,
+        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+        "reviews": "(59)",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 6,
+        "count": 1,
+        "product": "",
+        "id": 123456807
       },
       "user_id": "faizan.akhtar@gmail.com"
     }

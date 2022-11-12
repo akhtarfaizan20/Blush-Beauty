@@ -112,12 +112,12 @@ async function placeorder() {
   let data = await response.json();
 
   actualdata.forEach(async ({ id }) => {
-    console.log(id);
+    // alert(id);
     let response = await fetch(`http://localhost:3000/cart/${id}`, {
       method: "DELETE",
     });
     let data = await response.json();
   });
 
-  // window.location.href = "/profilepage.html";
+  window.location.href = "/profilepage.html";
 }
