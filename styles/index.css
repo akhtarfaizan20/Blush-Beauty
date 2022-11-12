@@ -1,3 +1,8 @@
+body{
+
+}
+
+
 #container {
     margin-top: 0px;
 }
@@ -77,8 +82,15 @@
 #HotDeals {
     margin: auto;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 50px;
     text-align: center;
+}
+#HotDeals>h4{
+    margin-bottom: 20px;
+}
+.pink{
+    color: #fc2779;
+    font-weight: 1000;
 }
 
 #HotDeals div {
@@ -98,7 +110,7 @@
     width: 100%;
     height: 550px;
     border: 0px solid red;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     padding: 20px;
     position: relative;
@@ -195,6 +207,7 @@
     width: 80%;
     text-align: center;
     border: 0px solid red;
+    margin-bottom: -30px;
 }
 
 #hai img {
@@ -208,7 +221,7 @@
     width: 95%;
     margin: auto;
     border: 0px solid red;
-    margin-top: 100px;
+    margin-top: 50px;
     justify-content: space-between;
 }
 
@@ -219,5 +232,58 @@
 }
 .hai{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
+}
+.banner{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.banner img{
+
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#s{
+    background: transparent;
+}
+#b{
+    background-color: black;
+    color: #fff;
+}
+#sb{
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+
+}
+
+#lastdiv{
+    border: 0px solid red;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    z-index: 9;
+}
+
+#lastcontainer{
+    border: 0px solid red;
+    padding: 20px;
+    height: 400px;
+    margin-top: 20px;
+    background: url(https://media.istockphoto.com/id/913690288/vector/lowpoly-trendy-background-with-copyspace-vector-illustration-used-opacity-layers.jpg?s=612x612&w=0&k=20&c=d2b2nKGz4rFuV2uQDSvve_3ANU2ibNl5h_sfNfoYDj4=);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+}
+
+.strm:hover{
+    animation-play-state:running;
+    cursor: pointer;
 }
