@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
   <style>
         #cartdiv1{
              display :flex ;
@@ -62,14 +63,17 @@
         margin-left: 90px;
         background-color: black;
         color:white;
-        font-size: 20px;
-        width: 170px;
+        font-size: 14px;
+        width: 180px;
         border-radius: 14px;
         height: 40px;
         margin-top: 27px;
         }
         #bobottom{
             background-color: white;
+            height: auto;
+            padding: 2px 10px;
+            margin-top: 20px;
         }
         #applyc{
             background-color: white;
@@ -84,17 +88,19 @@
             height:100px;
             padding:30px;
             border-bottom-style: dotted;
+            /* border-bottom: 1px solid red; */
             padding-bottom: 0px;
             border-color: #d9d9d9;
             
         }
        #applybtn{
-        padding:20px;
+        padding:18px;
         background-color:#d9d9d9 ;
         font-weight: bold;
         color:darkgrey;border:none;border-radius: 10px;
-        width:170px;
-        font-size: 20px;
+        width:130px;
+        font-size: 16px;
+        margin-left: 10px;
        }
        #giftcode{
         box-sizing: border-box;
@@ -115,6 +121,26 @@
         margin-right: 10px;
         color:grey
        }
+       #profilebottom{
+            background-color:#edf0ef;
+            border:px solid green;
+            height:260px;
+            text-align: center;
+        }
+        #subscribebtn{
+            margin-left: 5px;
+        background-color: black;
+        color:white;
+        font-size: 16px;
+        width: 180px;
+        border-radius: 14px;
+        height: 45px;
+        margin-top: 20px;
+        }
+        #pb1{
+            display:flex;
+            margin-left: 33%;
+        }
     </style>
    
 </head>
@@ -129,7 +155,7 @@
     <div id="cartdiv2">
         <div id="bonusoffer">
             <div id="botop">
-                <div id="bo1">
+                <div style="margin-top:0px" id="bo1">
                     <h2 style="font-weight: 900;font: roboto;">BONUS OFFERS</h2>
                     <span style="color:grey;margin-top: 20px;" class="material-symbols-outlined">
                         expand_less
@@ -139,16 +165,16 @@
                     <div id="bo2_1">
                         <img style="height:80px;margin-left:20px;margin-top: 10px;" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-mini-lipstick-12-baby-houseman-28220228632659_584be809-56c3-4baf-b90b-8db9e95b2afe.jpg?v=1659698252" alt="">
                         <div style=display:block;margin-left:20px;>
-                            <h3>Matte As Hell Crayon Mini Lipstick - 12 Baby Houseman</h3>
-                            <h3>Rs:199</h3>
+                            <p>Matte As Hell Crayon Mini Lipstick - 12 Baby Houseman</p>
+                            <p>Rs:199</p>
                         </div>
                         <button>ADD TO CART</button>
                     </div>
                     <div>
-                        <div id="bo2_1">
+                        <div style="height:399px" id="bo2_1">
                             <img style="height:70px;margin-left:20px;margin-top: 8px;" src="https://cdn.shopify.com/s/files/1/0906/2558/products/SMNLL-Mini---Shade-02.jpg?v=1656000101" alt="">
                             <div style=display:block;margin-left:20px;>
-                                <h3> Smudge Me Not Liquid Mini Lipstick - 02 Brink of Pink (Plum Rose) <br>RS:249</h3>
+                                <p>Smudge Me Not Liquid Mini Lipstick-02 Brink of Pink (Plum Rose)<br>RS:249</p>
                             </div>
                             <button style="width:200px">ADD TO CART</button>
                         </div>
@@ -159,7 +185,9 @@
             </div>
             <div id="bobottom">
                 <div><h2 >CART SUMMARY</h2></div>
-                <div id="cartproduct"></div>
+                <div id="cartproduct">
+
+                </div>
             </div>
             
         </div>
@@ -168,7 +196,7 @@
               <div id="applyc_1">
               
                  <div id="applyc_11">
-                    <input id="giftcode" oninput="giftcode()" style="padding:20px;border-radius: 10px;font-size: 18px;width:500px;border:1px solid  grey;margin-right: 20px;" type="text" placeholder="Enter Gift Code">
+                    <input id="giftcode" oninput="giftcode()" style="padding:18px;border-radius: 10px;font-size: 18px;width:300px;border:1px solid  grey;margin-right: 10px;" type="text" placeholder="Enter Gift Code">
                     <button id="applybtn">APPLY</button>
                  </div>
                  <div  id="applyc_12">
@@ -186,11 +214,11 @@
                     <div id="applyc_111"> 
                       <div>
                         <p>Total Price</p>
-                        <p>Rs:</p>
+                        <p id="totalprice1">Rs:</p>
                        </div>
                        <div>
                         <p>Tax</p>
-                        <p>Rs:</p>
+                        <p style="color:green">Free</p>
                        </div>
                        <div>
                         <p>Shipping</p>
@@ -199,13 +227,30 @@
                    
                  </div>
                  <div style="padding:20px" id="applyc_12">
-                     <h2 style="margin-top:40px">Total:</h2>
+                     <h2 style="margin-top:40px;margin-left: 15px;">Total:</h2>
                      
-                     <h2  style="margin-top:40px">Rs:Total value Price</h2>
+                     <h2  id="tptopay" style="margin-top:40px;margin-right: 18px;"></h2>
+
+                  
                 </div>
+                <button id="placeorderbtn" onclick="placeorder()" style="color:white;width:250px;background-color:black;font-size:18px;height:30px;margin-left: 330px;border-radius: 10px;margin-bottom: 20px;"></button>
+
               </div>
               </div>
         </div>
+    </div>
+    
+      <!-- Bottom"Lets stay in touch"" part -->
+    <div id="profilebottom">
+        <div id="pb1">
+            <div style="border:1px solid red;width:70px;height:1px;background-color: #fc2779;margin-top: 40px;margin-right: 20px;"></div>
+            <h1>Let's stay in Touch</h1>
+            <div style="border:1px solid red;width:70px;height:1px;background-color: #fc2779;margin-top: 40px;margin-left: 20px;"></div>
+        </div>
+        
+        <h4 style="color:#5f5e5e">Get the latest beauty tips straight to your inbox. Can’t wait to connect!</h4>
+        <input style="padding: 10px;outline:none;width:500px;border-radius: 10px;border-color: #f2f2f2;font-size: 18px;" type="email" placeholder="Enter Email">
+        <button id="subscribebtn">SUBSCRIBE</button>
     </div>
 </body>
 </html>
