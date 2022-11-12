@@ -666,7 +666,7 @@ function displayData(makeupData) {
 
     var shadeNo = document.createElement("p");
     shadeNo.textContent = elem.shade_no;
-    shadeNo.setAttribute("id", "shadeNo");
+    shadeNo.setAttribute("id", "shadeNo--");
 
     var shadeImg = document.createElement("img");
     shadeImg.setAttribute("src", elem.shade_url);

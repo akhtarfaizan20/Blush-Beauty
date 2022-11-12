@@ -20,6 +20,7 @@ body {
   margin-right: 50px;
 }
 #main {
+  border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 #main:hover {
@@ -111,6 +112,7 @@ p {
   margin-top: 10px;
   margin-left: 10px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  height: 650px;
 }
 #priceSort {
   background-color: white;
@@ -145,6 +147,7 @@ p {
 #shade {
   width: 50%;
   height: 10%;
+  border-radius: 50%;
 }
 #shadeNo {
   margin-top: -1px;
