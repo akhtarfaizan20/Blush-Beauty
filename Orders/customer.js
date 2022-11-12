@@ -23,7 +23,7 @@ const displayData = (data) => {
     let tr = document.createElement("tr");
 
     let td1 = document.createElement("td");
-    td1.innerText = el.dateAdded;
+    td1.innerText = el.date;
 
     let td2 = document.createElement("td");
     td2.innerText = el.name;

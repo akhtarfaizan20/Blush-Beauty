@@ -12,7 +12,7 @@
       "phone": "9718245953",
       "name": "Faizan Akhtar",
       "password": "12345678",
-      "dateAdded": "05-05-2001"
+      "date": "05-05-2001"
     },
     {
       "id": "faizan.akhtar@gmail.com",
@@ -22,11 +22,13 @@
       "date": "11-11-2022"
     },
     {
+
       "id": "heroft7024@gmail.com",
       "name": "Sachin Shekhar Patel",
       "password": "12345678",
       "phone": "7024070053",
       "date": "11-11-2022"
+
     }
   ],
   "orders": [
@@ -40,6 +42,7 @@
     },
     {
       "date": "12-10-2022",
+
       "customer_id": "akhtarfaizan20@gmail.com",
       "phone": "9718245953",
       "totalproducts": 2,
@@ -275,7 +278,7 @@
   ],
   "cart": [
     {
-      "id": 125688,
+      "id": 125686,
       "product": {
         "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
         "name": "Contour De Force Mini Blush",
@@ -286,6 +289,22 @@
         "product": "blush",
         "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
         "shade_no": 5,
+        "count": 1,
+        "id": 123456791
+      },
+      "user_id": "akhtarfaizan20@gmail.com"
+    },
+    {
+      "id": 125687,
+      "product": {
+        "image_url": "https://i.ibb.co/0m1KdhG/sugar-cosmetics-magic-wand-waterproof-concealer-07-vanilla-latte-fair-golden-undertone-1327839861153.jpg",
+        "name": "Magic Wand Waterproof Concealer",
+        "price": 799,
+        "rating": 4.8,
+        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+        "reviews": "(59)",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 6,
         "count": 1,
         "id": 123456791
       },
@@ -303,6 +322,7 @@
         "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
         "shade_no": 6,
         "count": 1,
+
         "product": "",
         "id": 123456807
       },
