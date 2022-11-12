@@ -20,13 +20,6 @@
       "password": "Abc@12345",
       "phone": "123456789",
       "date": "11-11-2022"
-    },
-    {
-      "id": "heroft7024@gmail.com",
-      "name": "Sachin Shekhar Patel",
-      "password": "12345678",
-      "phone": "7024070053",
-      "date": "11-11-2022"
     }
   ],
   "orders": [
@@ -273,23 +266,6 @@
     }
   ],
   "cart": [
-    {
-      "id": 125688,
-      "product": {
-        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
-        "name": "Contour De Force Mini Blush",
-        "price": 449,
-        "rating": 4.9,
-        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
-        "reviews": "(40)",
-        "product": "blush",
-        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-        "shade_no": 5,
-        "count": 1,
-        "id": 123456791
-      },
-      "user_id": "akhtarfaizan20@gmail.com"
-    },
     {
       "id": 125688,
       "product": {
