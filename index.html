@@ -34,7 +34,7 @@
             </a>
 
             <!-- Search box -->
-            <div id="sbox">
+            <div class="sbox">
                 <input class="search" type="text" placeholder=' Try "Liquid Lipstick"' name="search">
                 <button class="sbtn" type="submit"><i class="fa fa-search"></i>Search</button>
             </div>
@@ -187,7 +187,7 @@
     <!-- HOT DEALS Starts form here-->
 
     <div id="HotDeals">
-        <h4>HOT DEALS</h4>
+        <h4><span class="pink">--</span>HOT DEALS<span class="pink">--</span></h4>
         <div>
             <div class="hdeal"><img
                     src="https://d32baadbbpueqt.cloudfront.net/Homepage/d9560110-40f7-4d14-a98d-5599b45a84ef.jpg"
@@ -205,7 +205,7 @@
     <!-- JUST-IN Starts form here -->
 
      <div id="JUST-IN">
-        <h3>JUST-IN</h3>
+        <h3><span class="pink">--</span>JUST-IN<span class="pink">--</span></h3>
         <div id="justCard">
             <div class="card2">
                 <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-Prime-Sublime-Primer---Powered-By-Images1_ebe7ea59-dff5-4a2a-9a70-c94435d3f46e.jpg?v=1666928973"
@@ -268,7 +268,7 @@
     <!-- SUGAR STREAMING Starts form here -->
 
         <div id="txt">
-            <h4>SUGAR STREAMING</h4>
+            <h4><span class="pink">-- </span>SUGAR STREAMING<span class="pink"> --</span></h4>
             <div id="strmcard">
             
                 <div class="strm"><video src="https://cdn4.fireworktv.com/medias/2022/11/8/1667907533-zhrmtkcn/watermarked/540/Y2Mate.is-Bollywood1990vs2022MakeupshortsSUGARCosmetics-UavyluCenIQ-720p-1658012746503.mp4"></video></div>
@@ -288,13 +288,13 @@
       <!-- SHUKAR HAI, SUGAR HAI! Starts form here -->
 
       <div id="hai">
-        <h4>SHUKAR HAI, BB HAI!</h4>
+        <h4><span class="pink">--</span>SHUKAR HAI, BB HAI!<span class="pink">--</span></h4>
         <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/b16a42b1-3e35-42bb-b122-a517e75c490e.jpg" alt="">
       </div>
 
       <!-- TOP PICKS OF THE WEEK Starts form here -->
       <div class="hai">
-        <h4>TOP PICKS OF THE WEEK</h4>
+        <h4><span class="pink">--</span>TOP PICKS OF THE WEEK<span class="pink">--</span></h4>
      
       <div id="top">
         <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/ae700fcf-b911-452c-a916-f9994a15d20c.gif" alt=""></div>
@@ -302,6 +302,33 @@
         <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/c325cb7a-0c27-454d-a631-1e184b071e55.jpg" alt=""></div>
       </div>
     </div>
+
+    <!--REFER YOUR FRIENDS starts from here-->
+
+    <div class="banner">
+        <h4><span class="pink">--</span>REFER YOUR FRIENDS<span class="pink">--</span></h4>
+        <div><img  src="https://d32baadbbpueqt.cloudfront.net/Homepage/8bfe8bb4-002d-4097-a773-6af33325a594.jpg" alt=""></div>
+    </div>
+
+    <!-- baseline start from here -->
+    <hr>
+    <div id="lastcontainer">
+        <div >
+            <p>READ MORE ABOUT SUGAR COSMETICS <span class="pink">></span> </p>
+        </div>
+        <div id="lastdiv">
+            <h4>LET’S STAY IN TOUCH</h4>
+            <p>Get the latest beauty tips straight to your inbox. Can’t wait to connect!</p>
+            <div class="sbox" id="sb">
+            <input class="search" id="s" type="text" placeholder="Enter Email">
+            <button class="sbtn" id="b">Subscribe</button>
+            </div>
+            
+        </div>
+
+    </div>
+    
+
 
     <!-- Footer -->
     <div class="footerlogo">
@@ -388,4 +415,17 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 
+    <script>
+        const video= document.querySelectorAll('video');
+        video.forEach(video=>{
+            video.addEventListener("mouseover",function(){
+                this.play()
+            });
+            video.addEventListener("mouseout",function(){
+                this.pause()
+            })
+        })
+    </script>
+
 <script src="/index.js"></script>
+
