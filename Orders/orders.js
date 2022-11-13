@@ -41,14 +41,16 @@ const displayData = (data) => {
 let button = document.getElementById("page");
 let page = 1;
 const createButton = async () => {
-  let response = await fetch(`http://localhost:3000/customers`);
+  let response = await fetch(`http://localhost:3000/orders`);
 
   let data = await response.json();
+  // console.log(data);
   let totalButtons = Math.ceil(data.length / 6);
   //   but.innerHTML = "";
   button.innerHTML = "";
 
   for (let i = 1; i <= totalButtons; i++) {
+    // console.log(i);
     let but = document.createElement("button");
     but.innerText = i;
     but.id = i;

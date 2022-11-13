@@ -22,13 +22,25 @@
       "date": "11-11-2022"
     },
     {
-
       "id": "heroft7024@gmail.com",
       "name": "Sachin Shekhar Patel",
       "password": "12345678",
       "phone": "7024070053",
       "date": "11-11-2022"
-
+    },
+    {
+      "id": "shamraaditi9112001@gmail.com",
+      "name": "Aditi",
+      "password": "12345678",
+      "phone": "7876044325",
+      "date": "12-11-2022"
+    },
+    {
+      "id": "kumarsumannnnn@gmail.com",
+      "name": "Suman Kumar",
+      "password": "12345678",
+      "phone": "9857125815",
+      "date": "12-11-2022"
     }
   ],
   "orders": [
@@ -42,12 +54,107 @@
     },
     {
       "date": "12-10-2022",
-
       "customer_id": "akhtarfaizan20@gmail.com",
       "phone": "9718245953",
       "totalproducts": 2,
       "status": "Order Confirmed",
       "id": 100001
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "heroft7024@gmail.com",
+      "phone": "7024070053",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100002
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "akhtarfaizan20@gmail.com",
+      "phone": "9718245953",
+      "totalproducts": 3,
+      "status": "Order Confirmed",
+      "id": 100003
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 3,
+      "status": "Order Confirmed",
+      "id": 100004
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 4,
+      "status": "Order Confirmed",
+      "id": 100005
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100006
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 4,
+      "status": "Order Confirmed",
+      "id": 100007
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 3,
+      "status": "Order Confirmed",
+      "id": 100008
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 5,
+      "status": "Order Confirmed",
+      "id": 100009
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 7,
+      "status": "Order Confirmed",
+      "id": 100010
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 4,
+      "status": "Order Confirmed",
+      "id": 100011
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 7,
+      "status": "Order Confirmed",
+      "id": 100012
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 4,
+      "status": "Order Confirmed",
+      "id": 100013
     }
   ],
   "products": [
@@ -277,39 +384,6 @@
   ],
   "cart": [
     {
-      "id": 125686,
-      "product": {
-        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
-        "name": "Contour De Force Mini Blush",
-        "price": 449,
-        "rating": 4.9,
-        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
-        "reviews": "(40)",
-        "product": "blush",
-        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-        "shade_no": 5,
-        "count": 1,
-        "id": 123456791
-      },
-      "user_id": "akhtarfaizan20@gmail.com"
-    },
-    {
-      "id": 125687,
-      "product": {
-        "image_url": "https://i.ibb.co/0m1KdhG/sugar-cosmetics-magic-wand-waterproof-concealer-07-vanilla-latte-fair-golden-undertone-1327839861153.jpg",
-        "name": "Magic Wand Waterproof Concealer",
-        "price": 799,
-        "rating": 4.8,
-        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
-        "reviews": "(59)",
-        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-        "shade_no": 6,
-        "count": 1,
-        "id": 123456791
-      },
-      "user_id": "akhtarfaizan20@gmail.com"
-    },
-    {
       "id": 125688,
       "product": {
         "image_url": "https://i.ibb.co/0m1KdhG/sugar-cosmetics-magic-wand-waterproof-concealer-07-vanilla-latte-fair-golden-undertone-1327839861153.jpg",
@@ -321,11 +395,44 @@
         "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
         "shade_no": 6,
         "count": 1,
-
         "product": "",
         "id": 123456807
       },
       "user_id": "faizan.akhtar@gmail.com"
+    },
+    {
+      "user_id": "kumarsumannnnn@gmail.com",
+      "product": {
+        "image_url": "https://i.ibb.co/zF7pBH1/1-529c20ee-c872-4029-9702-8580d7b9a66f.jpg",
+        "name": "Ace Of Face Foundation Stick",
+        "price": 999,
+        "rating": 4.8,
+        "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
+        "reviews": "(50)",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 5,
+        "count": 1,
+        "product": "found",
+        "id": 123456799
+      },
+      "id": 125694
+    },
+    {
+      "user_id": "kumarsumannnnn@gmail.com",
+      "product": {
+        "image_url": "https://i.ibb.co/tXnmMYh/sugar-cosmetics-plush-crush-creme-crayon-13974621519955.jpg",
+        "name": "Plush Crush Creme Crayon",
+        "price": 349,
+        "rating": 4.7,
+        "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
+        "reviews": "(15)",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 5,
+        "count": 1,
+        "product": "crayon",
+        "id": 123456794
+      },
+      "id": 125695
     }
   ]
 }

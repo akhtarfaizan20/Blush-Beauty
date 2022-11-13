@@ -63,19 +63,19 @@ async function register() {
     phone,
     date,
   };
-  console.log(user_obj);
-  //   try {
-  //     let res = await fetch(`http://localhost:3000/customers`, {
-  //       method: "POST",
-  //       body: JSON.stringify(user_obj),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
+  //   console.log(user_obj);
+  try {
+    let res = await fetch(`http://localhost:3000/customers`, {
+      method: "POST",
+      body: JSON.stringify(user_obj),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
-  //     let data = await res.json();
-  //     console.log(data);
-  //   } catch (err) {
-  //     alert("Email Id already registered.");
-  //   }
+    let data = await res.json();
+    console.log(data);
+  } catch (err) {
+    alert("Email Id already registered.");
+  }
 }
