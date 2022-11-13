@@ -45,7 +45,7 @@ function append(data) {
     h4.innerText = "Rs:" + el.price;
     let name = document.createElement("p");
     name.innerText = el.name;
-    name.style = "margin-left:40px";
+    name.style = "margin-left:40px;width:200px;color:grey";
     let span = document.createElement("span");
     span.className = "material-symbols-outlined";
     span.onclick = () => {
@@ -56,7 +56,7 @@ function append(data) {
     span.style.cursor = "pointer";
     div.append(image, h4, name, span);
     cartproduct.append(div);
-
+    cartproduct.style="height:auto";
     let totalprice1 = document.getElementById("totalprice1");
     totalprice1.innerText = "Rs:" + " " + totalprice2;
     let tptopay = document.getElementById("tptopay");
@@ -122,6 +122,10 @@ async function placeorder() {
 
   window.location.href = "/profilepage.html";
 }
+
+
+
+
 
 let loginneduser = JSON.parse(localStorage.getItem("loginneduser"));
 // console.log(loginneduser);

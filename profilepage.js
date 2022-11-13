@@ -42,7 +42,62 @@ let append = (data) => {
   });
 
   console.log(actualdata);
+  appendtoright(actualdata)
 };
+
+
+// order append at sunday //
+
+
+function appendtoright(actualdata){
+  let profilemid2 = document.getElementById("profilemid2")
+  profilemid2.style= "height:auto;padding-top:20px"
+  profilemid2.innerHTML=null;
+  // console.log(ttp)
+  if(actualdata.length>0){
+    profilemid2.innerHTML=null;
+    actualdata.forEach(function(el){
+      let  div=document.createElement("div");
+       div.style="display:flex;color:grey;margin-bottom:20px;border:1px solid grey;padding:7px;border-radius:12px"
+      let date = document.createElement("h3");
+      date.style="margin-right:40px;color:#fd68a1"
+      date.innerText ="Date:"+ el.date;
+      let  phone= document.createElement("h3");
+         phone.style="margin-right:40px";
+       let tp =   document.createElement("h3");
+       tp.style="margin-right:40px"
+        tp.innerText = "Totalproducts:" + el.totalproducts
+         phone.innerText="Phone:"+el.phone;
+      let OS = document.createElement("h3");
+      OS.style="color:green"
+      OS.innerText=el.status
+
+      div.append(date,tp,phone,OS);
+      profilemid2.append(div)
+   })
+  }
+ else {
+    let img =document.createElement("img");
+        img.style="250px";
+        img.src="https://media.sugarcosmetics.com/upload/ic_empty_order%201.png"
+
+    let p =document.createElement("p");
+      p.style="font-size:18px;font-weight: bold;";
+      p.innerText="Order is empty";
+      
+    let h4 =document.createElement("h4");
+    h4.style="color:grey";
+    h4.innerText="What! No order yet? Get going already!"
+
+    let button =document.createElement("button");
+    button.style="width:130px;background-color:black;color:white;border-radius:5px;height:40px";
+    button.innerText="SHOP NOW"
+ }
+
+}
+
+// ****************//
+
 
 let loginneduser = JSON.parse(localStorage.getItem("loginneduser"));
 // console.log(loginneduser);
@@ -74,3 +129,12 @@ cart.onclick = () => {
     window.location.href = "/loginpage.html";
   }
 };
+
+
+function logout() {
+ 
+localStorage.removeItem("loginneduser")
+
+window.location.href ="index.html"
+
+}
