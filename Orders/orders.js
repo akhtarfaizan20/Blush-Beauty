@@ -9,7 +9,7 @@ window.onload = () => {
 };
 let getData = async () => {
   let response = await fetch(
-    `http://localhost:3000/orders?_page=${page}&_limit=6`
+    `https://infinite-brushlands-17015.herokuapp.com/orders?_page=${page}&_limit=6`
   );
   let data = await response.json();
 
@@ -44,7 +44,9 @@ const displayData = (data) => {
 let button = document.getElementById("page");
 let page = 1;
 const createButton = async () => {
-  let response = await fetch(`http://localhost:3000/orders`);
+  let response = await fetch(
+    `https://infinite-brushlands-17015.herokuapp.com/orders`
+  );
 
   let data = await response.json();
   // console.log(data);
@@ -72,15 +74,18 @@ let editStatus = async ({ id }) => {
   let obj = { status };
 
   try {
-    let response = await fetch(`http://localhost:3000/orders/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify(obj),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    let response = await fetch(
+      `https://infinite-brushlands-17015.herokuapp.com/orders/${id}`,
+      {
+        method: "PATCH",
+        body: JSON.stringify(obj),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     let data = await response.json();
-    console.log(data);
+    getData();
   } catch (error) {}
 };

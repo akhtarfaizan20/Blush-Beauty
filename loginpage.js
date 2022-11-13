@@ -8,7 +8,9 @@ async function checkuserdata() {
   let id = document.getElementById("id").value;
   let pass = document.getElementById("password").value;
   try {
-    let res = await fetch(`http://localhost:3000/customers/${id}`);
+    let res = await fetch(
+      `https://infinite-brushlands-17015.herokuapp.com/customers/${id}`
+    );
     let data = await res.json();
     console.log(data);
     if (data.id == undefined) {
