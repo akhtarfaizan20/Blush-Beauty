@@ -441,24 +441,6 @@
         "id": 123456794
       },
       "id": 125695
-    },
-    {
-      "user_id": "akhtarfaizan20@gmail.com",
-      "product": {
-        "image_url": "https://i.ibb.co/Vgpv2px/01-5e8187e3-f7a2-40aa-a759-d4bf69769234.jpg",
-        "name": "Kohl Of Honour Intense Kajal- 01",
-        "price": 249,
-        "rating": 4.8,
-        "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
-        "reviews": "(1)",
-        "product": "kajal",
-        "feature": "smudge",
-        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-        "shade_no": 2,
-        "count": 1,
-        "id": 123456795
-      },
-      "id": 125696
     }
   ]
 }
