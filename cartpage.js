@@ -56,7 +56,7 @@ function append(data) {
     span.style.cursor = "pointer";
     div.append(image, h4, name, span);
     cartproduct.append(div);
-    cartproduct.style="height:auto";
+    cartproduct.style = "height:auto";
     let totalprice1 = document.getElementById("totalprice1");
     totalprice1.innerText = "Rs:" + " " + totalprice2;
     let tptopay = document.getElementById("tptopay");
@@ -93,7 +93,7 @@ async function placeorder() {
   let phone = logginedUser.phone;
   let totalproducts = actualdata.length;
   // alert(totalproducts);
-  let status = "Order Confirmed";
+  let status = "Pending";
   let obj = {
     date,
     customer_id,
@@ -122,10 +122,6 @@ async function placeorder() {
 
   window.location.href = "/profilepage.html";
 }
-
-
-
-
 
 let loginneduser = JSON.parse(localStorage.getItem("loginneduser"));
 // console.log(loginneduser);
