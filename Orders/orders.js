@@ -62,3 +62,5 @@ const createButton = async () => {
     button.append(but);
   }
 };
+
+console.log("hello");
