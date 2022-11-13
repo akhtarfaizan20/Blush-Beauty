@@ -16,7 +16,9 @@ window.onload = () => {
   showName();
 };
 let getData = async () => {
-  let response = await fetch(`http://localhost:3000/cart`);
+  let response = await fetch(
+    `https://infinite-brushlands-17015.herokuapp.com/cart`
+  );
   let data = await response.json();
 
   actualdata = data.filter((el) => {
@@ -69,19 +71,20 @@ function append(data) {
 
 let removeFromCart = async (i) => {
   let id = actualdata[i].id;
-  alert("Item Removed");
+  // alert("Item Removed");
 
-  let response = await fetch(`http://localhost:3000/cart/${id}`, {
-    method: "DELETE",
-  });
+  let response = await fetch(
+    `https://infinite-brushlands-17015.herokuapp.com/cart/${id}`,
+    {
+      method: "DELETE",
+    }
+  );
   let data = await response.json();
   console.log(data);
   getData();
 };
 
 async function placeorder() {
-  alert("Order Placed Successfully");
-
   let date = new Date();
   let day = date.getDate();
   let month = date.getMonth();
@@ -102,24 +105,31 @@ async function placeorder() {
     status,
   };
 
-  let response = await fetch(`http://localhost:3000/orders`, {
-    method: "POST",
-    body: JSON.stringify(obj),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  let response = await fetch(
+    `https://infinite-brushlands-17015.herokuapp.com/orders`,
+    {
+      method: "POST",
+      body: JSON.stringify(obj),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
 
   let data = await response.json();
 
-  actualdata.forEach(async ({ id }) => {
+  await actualdata.forEach(async (el, i) => {
     // alert(id);
-    let response = await fetch(`http://localhost:3000/cart/${id}`, {
-      method: "DELETE",
-    });
-    let data = await response.json();
+    // let response = await fetch(
+    //   `https://infinite-brushlands-17015.herokuapp.com/cart/${id}`,
+    //   {
+    //     method: "DELETE",
+    //   }
+    // );
+    // let data = await response.json();
+    let response = await removeFromCart(i);
   });
-
+  alert("Order Placed Successfully");
   window.location.href = "/profilepage.html";
 }
 

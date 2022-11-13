@@ -581,7 +581,7 @@
 // ];
 
 // makeupData.forEach(async (el) => {
-//   let response = await fetch(`http://localhost:3000/products`, {
+//   let response = await fetch(`https://infinite-brushlands-17015.herokuapp.com/products`, {
 //     method: "POST",
 //     body: JSON.stringify(el),
 //     headers: {
@@ -595,7 +595,9 @@
 
 let makeupData;
 let getData = async () => {
-  let response = await fetch(`http://localhost:3000/products`);
+  let response = await fetch(
+    `https://infinite-brushlands-17015.herokuapp.com/products`
+  );
 
   makeupData = await response.json();
   console.log(makeupData);
@@ -650,7 +652,7 @@ function displayData(makeupData) {
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     img.setAttribute("class", "image");
-    
+
     var head = document.createElement("p");
     head.textContent = elem.name;
 
@@ -685,7 +687,7 @@ function displayData(makeupData) {
 
     var btn = document.createElement("button");
     btn.setAttribute("id", "btn");
-    btn.innerHTML = '<i class="fa-solid fa-heart"></i>'
+    btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
     // btn.innerHTML = "";
     btn.addEventListener("click", function () {
       wishList(elem);
@@ -697,7 +699,7 @@ function displayData(makeupData) {
       addToCart(elem);
     });
     btn1.setAttribute("id", "btn1");
-    div3.append(shadeImg,shadeNo);
+    div3.append(shadeImg, shadeNo);
     div2.append(btn, btn1);
     div1.append(img1, p1, p2);
     div.append(img, head, p, div3, div1, div2);
@@ -713,14 +715,18 @@ async function addToCart(elem, index) {
       product: elem,
     };
     try {
-      let response = await fetch(`http://localhost:3000/cart`, {
-        method: "POST",
-        body: JSON.stringify(obj),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      let response = await fetch(
+        `https://infinite-brushlands-17015.herokuapp.com/cart`,
+        {
+          method: "POST",
+          body: JSON.stringify(obj),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       let data = await response.json();
+      alert("Item added to Cart");
     } catch (error) {}
   } else {
     alert("Please Login to add product in your cart");
