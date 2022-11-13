@@ -57,14 +57,14 @@
       "customer_id": "akhtarfaizan20@gmail.com",
       "phone": "9718245953",
       "totalproducts": 5,
-      "status": "Order Confirmed"
+      "status": "Pending"
     },
     {
       "date": "12-10-2022",
       "customer_id": "akhtarfaizan20@gmail.com",
       "phone": "9718245953",
       "totalproducts": 2,
-      "status": "Order Confirmed",
+      "status": "Out for Delivery",
       "id": 100001
     },
     {
@@ -72,7 +72,7 @@
       "customer_id": "heroft7024@gmail.com",
       "phone": "7024070053",
       "totalproducts": 1,
-      "status": "Order Confirmed",
+      "status": "Returned",
       "id": 100002
     },
     {
@@ -80,7 +80,7 @@
       "customer_id": "akhtarfaizan20@gmail.com",
       "phone": "9718245953",
       "totalproducts": 3,
-      "status": "Order Confirmed",
+      "status": "Delivered",
       "id": 100003
     },
     {
@@ -277,7 +277,7 @@
     {
       "image_url": "https://i.ibb.co/s3L8jVM/sugar-cosmetics-contour-de-force-mini-bronzer-01-taupe-topper-cool-toned-brown-gray-undertone-110202.jpg",
       "name": "Contour De Force Mini Bronzer",
-      "price": 399,
+      "price": 199,
       "rating": 4.7,
       "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(20)",
@@ -483,6 +483,19 @@
       "count": 1,
       "product": "",
       "id": 123456807
+    },
+    {
+      "image_url": "https://i.ibb.co/s3L8jVM/sugar-cosmetics-contour-de-force-mini-bronzer-01-taupe-topper-cool-toned-brown-gray-undertone-110202.jpg",
+      "name": "Contour De Force Mini Bronzer 2",
+      "price": 1258,
+      "rating": 4.2,
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
+      "reviews": 45,
+      "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      "shade_no": 11,
+      "count": 2,
+      "product": "",
+      "id": 123456808
     }
   ],
   "cart": [
@@ -538,21 +551,21 @@
       "id": 125695
     },
     {
-      "user_id": "sachin@gmail.com",
+
+      "user_id": "akhtarfaizan20@gmail.com",
       "product": {
-        "image_url": "https://i.ibb.co/41xztXR/sugar-cosmetics-matte-attack-transferproof-lipstick-01-boldplay-cardinal-pink-13678351515731.jpg",
-        "name": "Matte Attack Transferproof Lipstick",
-        "price": 699,
-        "rating": 4.7,
+        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
+        "name": "Contour De Force Mini Blush",
+        "price": 349,
+        "rating": 4.9,
         "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
-        "reviews": "(10)",
+        "reviews": "(40)",
+        "product": "blush",
         "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-        "shade_no": 4,
+        "shade_no": 5,
         "count": 1,
-        "product": "matte",
-        "id": 123456793
-      },
-      "id": 125698
+        "id": 123456791
+      }
     }
   ]
 }
