@@ -1,5 +1,5 @@
 let loginneduser = JSON.parse(localStorage.getItem("loginneduser"));
-// console.log(loginneduser);
+console.log(loginneduser);
 
 let logpage = document.getElementById("logpage");
 
