@@ -2,12 +2,15 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+    
 
 }
 
 body ::selection {
     color: #fff;
-    background: rgb(252, 39, 121)
+    background: rgb(252, 39, 121);
+    
+
 }
 
 input {
@@ -62,7 +65,7 @@ input {
     align-items: center;
 }
 
-#sbox {
+.sbox {
     border: 1px solid #fff;
     display: block;
     border-radius: 8px;
@@ -129,3 +132,8 @@ input {
     opacity: 0.9;
 }
 
+
+#uppernav a{
+    color: white;
+    text-decoration: none;
+}

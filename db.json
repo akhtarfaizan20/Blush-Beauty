@@ -12,7 +12,7 @@
       "phone": "9718245953",
       "name": "Faizan Akhtar",
       "password": "12345678",
-      "dateAdded": "05-05-2001"
+      "date": "05-05-2001"
     },
     {
       "id": "faizan.akhtar@gmail.com",
@@ -20,6 +20,27 @@
       "password": "Abc@12345",
       "phone": "123456789",
       "date": "11-11-2022"
+    },
+    {
+      "id": "heroft7024@gmail.com",
+      "name": "Sachin Shekhar Patel",
+      "password": "12345678",
+      "phone": "7024070053",
+      "date": "11-11-2022"
+    },
+    {
+      "id": "shamraaditi9112001@gmail.com",
+      "name": "Aditi",
+      "password": "12345678",
+      "phone": "7876044325",
+      "date": "12-11-2022"
+    },
+    {
+      "id": "kumarsumannnnn@gmail.com",
+      "name": "Suman Kumar",
+      "password": "12345678",
+      "phone": "9857125815",
+      "date": "12-11-2022"
     }
   ],
   "orders": [
@@ -30,6 +51,126 @@
       "phone": "9718245953",
       "totalproducts": 5,
       "status": "Order Confirmed"
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "akhtarfaizan20@gmail.com",
+      "phone": "9718245953",
+      "totalproducts": 2,
+      "status": "Order Confirmed",
+      "id": 100001
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "heroft7024@gmail.com",
+      "phone": "7024070053",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100002
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "akhtarfaizan20@gmail.com",
+      "phone": "9718245953",
+      "totalproducts": 3,
+      "status": "Order Confirmed",
+      "id": 100003
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 3,
+      "status": "Order Confirmed",
+      "id": 100004
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 4,
+      "status": "Order Confirmed",
+      "id": 100005
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100006
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 4,
+      "status": "Order Confirmed",
+      "id": 100007
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 3,
+      "status": "Order Confirmed",
+      "id": 100008
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 5,
+      "status": "Order Confirmed",
+      "id": 100009
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 7,
+      "status": "Order Confirmed",
+      "id": 100010
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 4,
+      "status": "Order Confirmed",
+      "id": 100011
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 7,
+      "status": "Order Confirmed",
+      "id": 100012
+    },
+    {
+      "date": "12-10-2022",
+      "customer_id": "kumarsumannnnn@gmail.com",
+      "phone": "9857125815",
+      "totalproducts": 4,
+      "status": "Order Confirmed",
+      "id": 100013
+    },
+    {
+      "date": "13-10-2022",
+      "customer_id": "akhtarfaizan20@gmail.com",
+      "phone": "9718245953",
+      "totalproducts": 1,
+      "status": "Order Confirmed",
+      "id": 100014
+    },
+    {
+      "date": "13-10-2022",
+      "customer_id": "akhtarfaizan20@gmail.com",
+      "phone": "9718245953",
+      "totalproducts": 3,
+      "status": "Order Confirmed",
+      "id": 100015
     }
   ],
   "products": [
@@ -38,7 +179,7 @@
       "name": "Contour De Force Mini Blush",
       "price": 349,
       "rating": 4.9,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(40)",
       "product": "blush",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
@@ -51,7 +192,7 @@
       "name": "Contour De Force Mini Bronzer",
       "price": 399,
       "rating": 4.7,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(20)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 11,
@@ -64,7 +205,7 @@
       "name": "Matte Attack Transferproof Lipstick",
       "price": 699,
       "rating": 4.7,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(10)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 4,
@@ -77,7 +218,7 @@
       "name": "Plush Crush Creme Crayon",
       "price": 349,
       "rating": 4.7,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(15)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 5,
@@ -90,7 +231,7 @@
       "name": "Kohl Of Honour Intense Kajal- 01",
       "price": 249,
       "rating": 4.8,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(1)",
       "product": "kajal",
       "feature": "smudge",
@@ -104,7 +245,7 @@
       "name": "Mattle Satin Lipstick",
       "price": 999,
       "rating": 4.9,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(45)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 20,
@@ -117,7 +258,7 @@
       "name": "Arch Arrival Brow Definer",
       "price": 499,
       "rating": 4.7,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(20)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 8,
@@ -130,7 +271,7 @@
       "name": "Time To Shine Lip Gloss",
       "price": 499,
       "rating": 4.5,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(2)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 12,
@@ -143,7 +284,7 @@
       "name": "Ace Of Face Foundation Stick",
       "price": 999,
       "rating": 4.8,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(50)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 5,
@@ -156,7 +297,7 @@
       "name": "Beginners Makeup Combo",
       "price": 999,
       "rating": 4.3,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 7,
       "count": 1,
@@ -169,7 +310,7 @@
       "name": "Smudge Me Not Lip Duo",
       "price": 599,
       "rating": 4.4,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(9)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 5,
@@ -182,7 +323,7 @@
       "name": "Contour De Force Mini Blush pink",
       "price": 349,
       "rating": 5,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(31)",
       "product": "blush",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
@@ -195,7 +336,7 @@
       "name": "Eye Warned You So! Eyeliner",
       "price": 699,
       "rating": 4.8,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(17)",
       "product": "eye",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
@@ -208,7 +349,7 @@
       "name": "Mettle Liquid Lipstick",
       "price": 1199,
       "rating": 4.8,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(4)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 20,
@@ -221,7 +362,7 @@
       "name": "Base Of Glory Pore Primer",
       "price": 799,
       "rating": 4.8,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(80)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 15,
@@ -234,7 +375,7 @@
       "name": "Gloss Boss 24HR Eyeliner - Black",
       "price": 499,
       "rating": 4,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "product": "eye",
       "feature": "smudge",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
@@ -248,7 +389,7 @@
       "name": "Magic Wand Waterproof Concealer",
       "price": 799,
       "rating": 4.8,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(59)",
       "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
       "shade_no": 6,
@@ -261,52 +402,53 @@
     {
       "id": 125688,
       "product": {
-        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
-        "name": "Contour De Force Mini Blush",
-        "price": 999,
-        "rating": 4.9,
-        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
-        "reviews": "(40)",
-        "product": "blush",
-        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-        "shade_no": 5,
-        "count": 1,
-        "id": 123456791
-      },
-      "user_id": "akhtarfaizan20@gmail.com"
-    },
-    {
-      "id": 125688,
-      "product": {
-        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
-        "name": "Contour De Force Mini Blush",
-        "price": 449,
-        "rating": 4.9,
-        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
-        "reviews": "(40)",
-        "product": "blush",
-        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-        "shade_no": 5,
-        "count": 1,
-        "id": 123456791
-      },
-      "user_id": "akhtarfaizan20@gmail.com"
-    },{
-      "id": 125688,
-      "product": {
         "image_url": "https://i.ibb.co/0m1KdhG/sugar-cosmetics-magic-wand-waterproof-concealer-07-vanilla-latte-fair-golden-undertone-1327839861153.jpg",
-      "name": "Magic Wand Waterproof Concealer",
-      "price": 799,
-      "rating": 4.8,
-      "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
-      "reviews": "(59)",
-      "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-      "shade_no": 6,
-      "count": 1,
-      "product": "",
-      "id": 123456807
+        "name": "Magic Wand Waterproof Concealer",
+        "price": 799,
+        "rating": 4.8,
+        "star_url": "https://i.ibb.co/4d3n7ZC/star.png",
+        "reviews": "(59)",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 6,
+        "count": 1,
+        "product": "",
+        "id": 123456807
       },
       "user_id": "faizan.akhtar@gmail.com"
+    },
+    {
+      "user_id": "kumarsumannnnn@gmail.com",
+      "product": {
+        "image_url": "https://i.ibb.co/zF7pBH1/1-529c20ee-c872-4029-9702-8580d7b9a66f.jpg",
+        "name": "Ace Of Face Foundation Stick",
+        "price": 999,
+        "rating": 4.8,
+        "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
+        "reviews": "(50)",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 5,
+        "count": 1,
+        "product": "found",
+        "id": 123456799
+      },
+      "id": 125694
+    },
+    {
+      "user_id": "kumarsumannnnn@gmail.com",
+      "product": {
+        "image_url": "https://i.ibb.co/tXnmMYh/sugar-cosmetics-plush-crush-creme-crayon-13974621519955.jpg",
+        "name": "Plush Crush Creme Crayon",
+        "price": 349,
+        "rating": 4.7,
+        "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
+        "reviews": "(15)",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 5,
+        "count": 1,
+        "product": "crayon",
+        "id": 123456794
+      },
+      "id": 125695
     }
   ]
 }
