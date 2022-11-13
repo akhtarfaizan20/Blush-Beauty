@@ -17,7 +17,7 @@ let getData = async () => {
 };
 const displayData = (data) => {
   let tbody = document.getElementById("tbody");
-  tbody.innerText = "";
+  tbody.innerHTML = "";
   data.forEach((el) => {
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
