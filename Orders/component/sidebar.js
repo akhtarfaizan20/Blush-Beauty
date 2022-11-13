@@ -13,16 +13,7 @@ const sidebar = () => {
       <h4>Customers</h4></a>
  
 </div>
-<div>
-  <a href="Discount.html"><i class="fa-solid fa-tag"></i>
-      <h4>Discounts</h4></a>
-  
-</div>
-
-<div>
-  <a href="Setting.html"><i class="fa-solid fa-gear"></i>
-      <h4>Settings</h4></a>
-</div>`;
+`;
 };
 
 export { sidebar };
