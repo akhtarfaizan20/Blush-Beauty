@@ -1,0 +1,35 @@
+#form{
+    width: 30%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    padding:  0px 30px 30px 30px;
+    /* margin-top: ; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: white;
+}
+body{
+    background-color: teal;
+}
+input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 8px;
+}
+
+input[type="submit"]{
+    background-color: blue;
+    color: white;
+    border: none;
+    width: 60%;
+    margin: auto;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}

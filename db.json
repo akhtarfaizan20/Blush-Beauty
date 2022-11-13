@@ -50,14 +50,14 @@
       "customer_id": "akhtarfaizan20@gmail.com",
       "phone": "9718245953",
       "totalproducts": 5,
-      "status": "Order Confirmed"
+      "status": "Pending"
     },
     {
       "date": "12-10-2022",
       "customer_id": "akhtarfaizan20@gmail.com",
       "phone": "9718245953",
       "totalproducts": 2,
-      "status": "Order Confirmed",
+      "status": "Out for Delivery",
       "id": 100001
     },
     {
@@ -65,7 +65,7 @@
       "customer_id": "heroft7024@gmail.com",
       "phone": "7024070053",
       "totalproducts": 1,
-      "status": "Order Confirmed",
+      "status": "Returned",
       "id": 100002
     },
     {
@@ -73,104 +73,8 @@
       "customer_id": "akhtarfaizan20@gmail.com",
       "phone": "9718245953",
       "totalproducts": 3,
-      "status": "Order Confirmed",
+      "status": "Delivered",
       "id": 100003
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 3,
-      "status": "Order Confirmed",
-      "id": 100004
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 4,
-      "status": "Order Confirmed",
-      "id": 100005
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 1,
-      "status": "Order Confirmed",
-      "id": 100006
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 4,
-      "status": "Order Confirmed",
-      "id": 100007
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 3,
-      "status": "Order Confirmed",
-      "id": 100008
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 5,
-      "status": "Order Confirmed",
-      "id": 100009
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 7,
-      "status": "Order Confirmed",
-      "id": 100010
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 4,
-      "status": "Order Confirmed",
-      "id": 100011
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 7,
-      "status": "Order Confirmed",
-      "id": 100012
-    },
-    {
-      "date": "12-10-2022",
-      "customer_id": "kumarsumannnnn@gmail.com",
-      "phone": "9857125815",
-      "totalproducts": 4,
-      "status": "Order Confirmed",
-      "id": 100013
-    },
-    {
-      "date": "13-10-2022",
-      "customer_id": "akhtarfaizan20@gmail.com",
-      "phone": "9718245953",
-      "totalproducts": 1,
-      "status": "Order Confirmed",
-      "id": 100014
-    },
-    {
-      "date": "13-10-2022",
-      "customer_id": "akhtarfaizan20@gmail.com",
-      "phone": "9718245953",
-      "totalproducts": 3,
-      "status": "Order Confirmed",
-      "id": 100015
     }
   ],
   "products": [
@@ -190,7 +94,7 @@
     {
       "image_url": "https://i.ibb.co/s3L8jVM/sugar-cosmetics-contour-de-force-mini-bronzer-01-taupe-topper-cool-toned-brown-gray-undertone-110202.jpg",
       "name": "Contour De Force Mini Bronzer",
-      "price": 399,
+      "price": 199,
       "rating": 4.7,
       "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
       "reviews": "(20)",
@@ -396,6 +300,19 @@
       "count": 1,
       "product": "",
       "id": 123456807
+    },
+    {
+      "image_url": "https://i.ibb.co/s3L8jVM/sugar-cosmetics-contour-de-force-mini-bronzer-01-taupe-topper-cool-toned-brown-gray-undertone-110202.jpg",
+      "name": "Contour De Force Mini Bronzer 2",
+      "price": 1258,
+      "rating": 4.2,
+      "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
+      "reviews": 45,
+      "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      "shade_no": 11,
+      "count": 2,
+      "product": "",
+      "id": 123456808
     }
   ],
   "cart": [
@@ -449,6 +366,23 @@
         "id": 123456794
       },
       "id": 125695
+    },
+    {
+      "user_id": "akhtarfaizan20@gmail.com",
+      "product": {
+        "image_url": "https://i.ibb.co/K0JNhDb/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg",
+        "name": "Contour De Force Mini Blush",
+        "price": 349,
+        "rating": 4.9,
+        "star_url": "https://media.sugarcosmetics.com/upload/rating_star.png",
+        "reviews": "(40)",
+        "product": "blush",
+        "shade_url": "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+        "shade_no": 5,
+        "count": 1,
+        "id": 123456791
+      },
+      "id": 125696
     }
   ]
 }

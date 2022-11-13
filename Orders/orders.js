@@ -32,7 +32,10 @@ const displayData = (data) => {
     td5.innerText = el.totalproducts;
     let td6 = document.createElement("td");
     td6.innerText = el.status;
-
+    td6.style.cursor = "pointer";
+    td6.onclick = () => {
+      editStatus(el);
+    };
     tr.append(td1, td2, td3, td4, td5, td6);
     tbody.append(tr);
   });
@@ -63,4 +66,21 @@ const createButton = async () => {
   }
 };
 
-console.log("hello");
+// console.log("hello");
+let editStatus = async ({ id }) => {
+  let status = prompt("Enter the Order Status");
+  let obj = { status };
+
+  try {
+    let response = await fetch(`http://localhost:3000/orders/${id}`, {
+      method: "PATCH",
+      body: JSON.stringify(obj),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {}
+};

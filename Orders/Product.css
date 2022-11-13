@@ -97,12 +97,12 @@ td,th{
 .productimage{
   width: 40px;
 }
-tr>td:last-child{
+tr>td:nth-child(6){
   cursor: pointer;
   color: white;
   background-color: red;
 }
-tr>td:last-child:hover{
+tr>td:nth-child(6):hover{
   cursor: pointer;
   color: red;
   background-color: white;
