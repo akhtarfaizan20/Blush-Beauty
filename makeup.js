@@ -650,7 +650,7 @@ function displayData(makeupData) {
     var img = document.createElement("img");
     img.setAttribute("src", elem.image_url);
     img.setAttribute("class", "image");
-
+    
     var head = document.createElement("p");
     head.textContent = elem.name;
 
@@ -685,7 +685,8 @@ function displayData(makeupData) {
 
     var btn = document.createElement("button");
     btn.setAttribute("id", "btn");
-    btn.innerHTML = "&#129293";
+    btn.innerHTML = '<i class="fa-solid fa-heart"></i>'
+    // btn.innerHTML = "";
     btn.addEventListener("click", function () {
       wishList(elem);
     });
@@ -696,7 +697,7 @@ function displayData(makeupData) {
       addToCart(elem);
     });
     btn1.setAttribute("id", "btn1");
-    div3.append(shadeNo, shadeImg);
+    div3.append(shadeImg,shadeNo);
     div2.append(btn, btn1);
     div1.append(img1, p1, p2);
     div.append(img, head, p, div3, div1, div2);

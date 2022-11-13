@@ -97,60 +97,74 @@
       </div>
     </div>
     <div id="divsidebyside">
-      <div id="sort">
-        <select id="priceSort" onchange="handlerPriceSort()">
-          <option src="" value="">Sorting</option>
-
-          <option value="high" style="font-size: 16px; font-weight: 200">
-            <span><i class="fa-solid fa-caret-down"></i></span>
-            Price: High To Low
-          </option>
-          <option value="low" style="font-size: 16px; font-weight: 200">
-            Price:Low To High
-          </option>
-          <option value="rating" style="font-size: 16px; font-weight: 200">
-            Rating
-          </option>
-        </select>
-
-        <select name="" id="filter" onchange="filter()">
-          <option value="">Select Product</option>
-          <option value="kajal" style="font-size: 16px; font-weight: 200">
-            Kajal
-          </option>
-          <option value="mascara" style="font-size: 16px; font-weight: 200">
-            Mascara
-          </option>
-          <option value="eye" style="font-size: 16px; font-weight: 200">
-            Eyeliner
-          </option>
-          <option value="crayon" style="font-size: 16px; font-weight: 200">
-            Crayon Lipstick
-          </option>
-          <option value="vivid" style="font-size: 16px; font-weight: 200">
-            Vivid Lipstick
-          </option>
-          <option value="matte" style="font-size: 16px; font-weight: 200">
-            Matte Lipstick
-          </option>
-          <option value="blush" style="font-size: 16px; font-weight: 200">
-            Blush
-          </option>
-          <option value="primer" style="font-size: 16px; font-weight: 200">
-            Primer
-          </option>
-          <option value="found" style="font-size: 16px; font-weight: 200">
-            Foundation & Powder
-          </option>
-        </select>
+      <div id="usort">
+        <div id="sort">
+          <select id="priceSort" onchange="handlerPriceSort()">
+            <option sesrc="" value="">Sorting</option>
+  
+            <option value="high" style="font-size: 16px; font-weight: 200">
+              <span><i class="fa-solid fa-caret-down"></i></span>
+              Price: High To Low
+            </option>
+            <option value="low" style="font-size: 16px; font-weight: 200">
+              Price:Low To High
+            </option>
+            <option value="rating" style="font-size: 16px; font-weight: 200">
+              Rating
+            </option>
+          </select>
+        </div>
+        <div id="secsort">
+          <select name="" id="filter" onchange="filter()">
+            <option value="">Select Product</option>
+            <option value="kajal" style="font-size: 16px; font-weight: 200">
+              Kajal
+            </option>
+            <option value="mascara" style="font-size: 16px; font-weight: 200">
+              Mascara
+            </option>
+            <option value="eye" style="font-size: 16px; font-weight: 200">
+              Eyeliner
+            </option>
+            <option value="crayon" style="font-size: 16px; font-weight: 200">
+              Crayon Lipstick
+            </option>
+            <option value="vivid" style="font-size: 16px; font-weight: 200">
+              Vivid Lipstick
+            </option>
+            <option value="matte" style="font-size: 16px; font-weight: 200">
+              Matte Lipstick
+            </option>
+            <option value="blush" style="font-size: 16px; font-weight: 200">
+              Blush
+            </option>
+            <option value="primer" style="font-size: 16px; font-weight: 200">
+              Primer
+            </option>
+            <option value="found" style="font-size: 16px; font-weight: 200">
+              Foundation & Powder
+            </option>
+            
+          </select>
+          <hr style="margin-top: 30px;">
+        </div>
       </div>
+     
 
       <!-- <div id="displayitem"></div> -->
       <div id="container-prod"></div>
       <!-- <div id="ft_container"></div> -->
     </div>
 
+
+
+<hr style="margin-top: 50px;" class="line">
+
+
+
+
     <!--footer!-->
+    <div id="mkfooter">
     <div class="footerlogo">
       <img src="./image/BLUSH.png" alt="#" />
     </div>
@@ -223,6 +237,9 @@
 
       <p id="tag">Copyright © 2022 SUGAR Cosmetics. All rights reserved.</p>
     </footer>
+
+  </div>
+
   </body>
 </html>
 <script type="text/javascript" src="makeup.js"></script>
