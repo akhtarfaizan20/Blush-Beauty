@@ -16,9 +16,7 @@ window.onload = () => {
   showName();
 };
 let getData = async () => {
-  let response = await fetch(
-    `https://infinite-brushlands-17015.herokuapp.com/cart`
-  );
+  let response = await fetch(`https://blush-beauty.onrender.com/cart`);
   let data = await response.json();
 
   actualdata = data.filter((el) => {
@@ -36,6 +34,8 @@ let cartproduct = document.getElementById("cartproduct");
 let totalprice = 0;
 
 function append(data) {
+  cartproduct.innerHTML = "";
+  totalprice = 0;
   data.forEach(function (el, i) {
     let totalprice2 = totalprice + el.price;
     let div = document.createElement("div");
@@ -73,14 +73,10 @@ let removeFromCart = async (i) => {
   let id = actualdata[i].id;
   // alert("Item Removed");
 
-  let response = await fetch(
-    `https://infinite-brushlands-17015.herokuapp.com/cart/${id}`,
-    {
-      method: "DELETE",
-    }
-  );
-  let data = await response.json();
-  console.log(data);
+  let response = await fetch(`https://blush-beauty.onrender.com/cart/${id}`, {
+    method: "DELETE",
+  });
+  alert("Item has successfully deleted.");
   getData();
 };
 
@@ -105,23 +101,20 @@ async function placeorder() {
     status,
   };
 
-  let response = await fetch(
-    `https://infinite-brushlands-17015.herokuapp.com/orders`,
-    {
-      method: "POST",
-      body: JSON.stringify(obj),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  );
+  let response = await fetch(`https://blush-beauty.onrender.com/orders`, {
+    method: "POST",
+    body: JSON.stringify(obj),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 
   let data = await response.json();
 
   await actualdata.forEach(async (el, i) => {
     // alert(id);
     // let response = await fetch(
-    //   `https://infinite-brushlands-17015.herokuapp.com/cart/${id}`,
+    //   `https://blush-beauty.onrender.com/cart/${id}`,
     //   {
     //     method: "DELETE",
     //   }

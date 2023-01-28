@@ -28,9 +28,7 @@ window.onload = () => {
 let actualdata;
 let getData = async () => {
   try {
-    let response = await fetch(
-      `https://infinite-brushlands-17015.herokuapp.com/orders`
-    );
+    let response = await fetch(`https://blush-beauty.onrender.com/orders`);
     let data = await response.json();
 
     append(data);

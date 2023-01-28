@@ -9,7 +9,7 @@ window.onload = () => {
 };
 let getData = async () => {
   let response = await fetch(
-    `https://infinite-brushlands-17015.herokuapp.com/orders?_page=${page}&_limit=6`
+    `https://blush-beauty.onrender.com/orders?_page=${page}&_limit=6`
   );
   let data = await response.json();
 
@@ -44,9 +44,7 @@ const displayData = (data) => {
 let button = document.getElementById("page");
 let page = 1;
 const createButton = async () => {
-  let response = await fetch(
-    `https://infinite-brushlands-17015.herokuapp.com/orders`
-  );
+  let response = await fetch(`https://blush-beauty.onrender.com/orders`);
 
   let data = await response.json();
   // console.log(data);
@@ -75,7 +73,7 @@ let editStatus = async ({ id }) => {
 
   try {
     let response = await fetch(
-      `https://infinite-brushlands-17015.herokuapp.com/orders/${id}`,
+      `https://blush-beauty.onrender.com/orders/${id}`,
       {
         method: "PATCH",
         body: JSON.stringify(obj),
