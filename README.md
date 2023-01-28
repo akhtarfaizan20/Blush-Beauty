@@ -25,22 +25,35 @@ Project link -> https://desibazaar.vercel.app/
 
 # 1. Landing Page
 
-![landing page](https://github.com/akhtarfaizan20/Desi-Bazaar/blob/master/public/Images/README/home1.png?raw=true)
-![landing page](https://github.com/akhtarfaizan20/Desi-Bazaar/blob/master/public/Images/README/home2.png?raw=true)
+![landing page](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/home1.png?raw=true)
+![landing page](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/home2.png?raw=true)
+![landing page](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/home3.png?raw=true)
 
 
-# 2. Login Page
 
-![login](https://github.com/akhtarfaizan20/Desi-Bazaar/blob/master/public/Images/README/login.png?raw=true)
+# 2. Products Page
 
-# 3. Signup Page
+![login](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/products.png?raw=true)
 
-![cart](https://github.com/akhtarfaizan20/Desi-Bazaar/blob/master/public/Images/README/signup.png?raw=true)
+# 3. Cart Page
 
-# 4. Product Page
+![cart](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/cart.png?raw=true)
 
-![product](https://github.com/akhtarfaizan20/Desi-Bazaar/blob/master/public/Images/README/products.png?raw=true)
+# 4. User Profile Page
 
-# 5. Cart Page
+![product](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/profile.png?raw=true)
 
-![product](https://github.com/akhtarfaizan20/Desi-Bazaar/blob/master/public/Images/README/cartpage.png?raw=true)
+# 5. Admin Dashboard Page
+
+![product](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/admin1.png?raw=true)
+
+# 5. Admin Products Page
+
+![product](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/admin2.png?raw=true)
+
+# 5. Admin Customer Page
+
+![product](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/admin3.png?raw=true)
+
+
+##Thanks a lot for giving it a view.
