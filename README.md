@@ -56,4 +56,4 @@ Project link -> https://desibazaar.vercel.app/
 ![product](https://github.com/akhtarfaizan20/Blush-Beauty/blob/master/image/README/admin3.png?raw=true)
 
 
-##Thanks a lot for giving it a view.
+## Thanks a lot for giving it a view.
