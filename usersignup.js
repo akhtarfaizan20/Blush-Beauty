@@ -23,7 +23,7 @@ function gotologin() {
 //     date
 //      }
 
-//      let res = await fetch (`https://infinite-brushlands-17015.herokuapp.com/customers`,{
+//      let res = await fetch (`https://blush-beauty.onrender.com/customers`,{
 //         method: "POST",
 //         body:JSON.stringify(user_obj),
 //         headers:{
@@ -65,16 +65,13 @@ async function register() {
   };
   //   console.log(user_obj);
   try {
-    let res = await fetch(
-      `https://infinite-brushlands-17015.herokuapp.com/customers`,
-      {
-        method: "POST",
-        body: JSON.stringify(user_obj),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    let res = await fetch(`https://blush-beauty.onrender.com/customers`, {
+      method: "POST",
+      body: JSON.stringify(user_obj),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
     let data = await res.json();
     console.log(data);

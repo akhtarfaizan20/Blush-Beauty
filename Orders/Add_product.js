@@ -51,16 +51,13 @@ let getDataFromTheForm = () => {
 
 let postData = async (obj) => {
   try {
-    let response = await fetch(
-      "https://infinite-brushlands-17015.herokuapp.com/products",
-      {
-        method: "POST",
-        body: JSON.stringify(obj),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    let response = await fetch("https://blush-beauty.onrender.com/products", {
+      method: "POST",
+      body: JSON.stringify(obj),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     let data = await response.json();
     console.log(data);
     alert("Product Added Successfully");

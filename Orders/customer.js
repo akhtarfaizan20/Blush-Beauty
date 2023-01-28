@@ -9,7 +9,7 @@ window.onload = () => {
 };
 const getData = async () => {
   let response = await fetch(
-    `https://infinite-brushlands-17015.herokuapp.com/customers?_page=${page}&_limit=6`
+    `https://blush-beauty.onrender.com/customers?_page=${page}&_limit=6`
   );
   let data = await response.json();
 
@@ -48,7 +48,7 @@ const displayData = (data) => {
 // function to remove the using using DELETE request
 const removeUser = async ({ id }) => {
   let response = await fetch(
-    `https://infinite-brushlands-17015.herokuapp.com/customers/${id}`,
+    `https://blush-beauty.onrender.com/customers/${id}`,
     {
       method: "DELETE",
     }
@@ -62,9 +62,7 @@ const removeUser = async ({ id }) => {
 let button = document.getElementById("page");
 let page = 1;
 const createButton = async () => {
-  let response = await fetch(
-    `https://infinite-brushlands-17015.herokuapp.com/customers`
-  );
+  let response = await fetch(`https://blush-beauty.onrender.com/customers`);
 
   let data = await response.json();
   let totalButtons = Math.ceil(data.length / 6);

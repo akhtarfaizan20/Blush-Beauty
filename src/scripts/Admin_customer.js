@@ -3,7 +3,7 @@ window.onload = () => {
 };
 // fetch api to get the customer data
 const getCustomerData = async () => {
-  let response = await fetch(`http://localhost:3000/customers`);
+  let response = await fetch(`https://blush-beauty.onrender.com/customers`);
   let data = await response.json();
 
   displayCustomerDetails(data);
@@ -41,9 +41,12 @@ const displayCustomerDetails = (data) => {
 
 // function to remove the using using DELETE request
 const removeUser = async ({ id }) => {
-  let response = await fetch(`http://localhost:3000/customers/${id}`, {
-    method: "DELETE",
-  });
+  let response = await fetch(
+    `https://blush-beauty.onrender.com/customers/${id}`,
+    {
+      method: "DELETE",
+    }
+  );
 
   let data = await response.json();
   console.log(data);
